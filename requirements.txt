@@ -8,4 +8,6 @@ google-genai==2.25.0
 pydantic==2.13.5
 numpy==1.26.4
 scipy==1.13.1
-torch==2.2.2
+# CPU-only torch on Linux (Streamlit Cloud, Python 3.12): the default Linux wheel pulls in several GB of GPU libraries.
+torch @ https://download.pytorch.org/whl/cpu/torch-2.2.2%2Bcpu-cp312-cp312-linux_x86_64.whl ; sys_platform == "linux"
+torch==2.2.2 ; sys_platform != "linux"
