@@ -11,19 +11,7 @@ def get_data():
     return load()
 
 
-index, qas = get_data()
-categories = sorted({qa["category"] for qa in qas})
-
-query = st.text_input("Search", placeholder="e.g. renovation contractor")
-category = st.selectbox("Category", ["All"] + categories)
-category = None if category == "All" else category
-
-results = search(index, qas, query, category)
-
-if not results:
-    st.info("No results.")
-
-for qa in results:
+def show_qa(qa):
     st.markdown(f"### {qa['question']}")
     st.caption(qa["category"])
     for a in sorted(qa["answers"], key=lambda a: -a.get("count", 1)):
@@ -40,6 +28,31 @@ for qa in results:
             st.markdown(" · ".join(parts))
         st.markdown(f"- {a['text']}")
     st.divider()
+
+
+def recommendations(qa):
+    return sum(a.get("count", 1) for a in qa["answers"])
+
+
+index, qas = get_data()
+categories = sorted({qa["category"] for qa in qas})
+
+query = st.text_input("Search", placeholder="e.g. renovation contractor")
+
+if query.strip():
+    # Search always covers every category; categories are only for browsing.
+    results = search(index, qas, query, None)
+    if not results:
+        st.info("No results.")
+    for qa in results:
+        show_qa(qa)
+else:
+    st.subheader("Browse by category")
+    for category in categories:
+        in_category = [qa for qa in qas if qa["category"] == category]
+        with st.expander(f"{category} ({len(in_category)})"):
+            for qa in sorted(in_category, key=recommendations, reverse=True):
+                show_qa(qa)
 
 st.caption(
     "Found a bug, have a suggestion, or listed here and want to be removed? "
