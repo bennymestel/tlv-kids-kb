@@ -40,3 +40,8 @@ for qa in results:
             st.markdown(" · ".join(parts))
         st.markdown(f"- {a['text']}")
     st.divider()
+
+st.caption(
+    "Found a bug, have a suggestion, or listed here and want to be removed? "
+    "Email [bennymestel@gmail.com](mailto:bennymestel@gmail.com)"
+)
