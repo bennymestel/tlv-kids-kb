@@ -1,0 +1,11 @@
+# Raw chat export and build logs contain people's names and phone numbers: never commit.
+# Only the finished Q&A data and eval sets are committed (the app needs qa.json).
+data/*
+!data/qa.json
+!data/eval_queries.json
+!data/eval_heldout.json
+
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

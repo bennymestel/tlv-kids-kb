@@ -1,0 +1,338 @@
+[
+  {
+    "query": "mikve for kelim",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Is there a mikveh (ritual immersion pool) for dishes near Dizengoff Center?"
+    ]
+  },
+  {
+    "query": "ulpan",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "What is the best Ulpan (Hebrew language school) in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "kosher shuk tour",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Does anyone know a tour guide who offers a kosher tour of the Tel Aviv shuk (market)?",
+      "Does anyone know of a kosher food tour in Shuk HaCarmel?"
+    ]
+  },
+  {
+    "query": "rofe mishpacha maccabi",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good English-speaking Maccabi family doctor in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "chalavi catering",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good kosher chalawi (dairy) catering service?"
+    ]
+  },
+  {
+    "query": "parve dessert for shabbos",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Where can I buy delicious pareve (non-dairy kosher) desserts for Shabbat in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "weekly shiur",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a great in-person weekly Torah class (shiur) in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "minyan for yom kippur",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good Yom Kippur prayer service (minyan) in Tel Aviv with a partnership or pluralistic atmosphere?"
+    ]
+  },
+  {
+    "query": "ketuba artist",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a ketubah (Jewish marriage contract) maker or designer?",
+      "Does anyone have recommendations for an artist who creates custom ketubot (Jewish marriage contracts)?"
+    ]
+  },
+  {
+    "query": "check my tefilin",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Does anyone know someone who can check mezuzot and tefillin (phylacteries) in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "a/c cleaning",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Can anyone recommend an air conditioning technician in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "lawyer for apt contract",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a lawyer for apartment rental contracts in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "bday dinner",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a fun, experiential restaurant with good music for a birthday celebration in Tel Aviv?",
+      "Can anyone recommend a high-end kosher meat restaurant with a sukkah (temporary outdoor booth for Sukkot) and great atmosphere for a birthday celebration in Tel Aviv or Jerusalem?"
+    ]
+  },
+  {
+    "query": "donate furniture to idf lone soldiers",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Are there any lone soldier groups or contacts in Tel Aviv to donate furniture to?"
+    ]
+  },
+  {
+    "query": "ev charging",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Where can I find a public electric vehicle (EV) charging station in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "pt for back pain",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good personal trainer in Tel Aviv?",
+      "Can anyone recommend a good physiotherapist in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "cpa for us taxes",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good accountant or CPA (especially for Olim and US/Israel taxes)?"
+    ]
+  },
+  {
+    "query": "english speaking vet",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Can someone recommend an English-speaking vet in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "locked out of my apartment",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a reliable locksmith in Tel Aviv?",
+      "Does anyone have a contact or emergency service to open or break down a door when someone is locked in a bathroom?"
+    ]
+  },
+  {
+    "query": "kid stuck in the bathroom",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Does anyone have a contact or emergency service to open or break down a door when someone is locked in a bathroom?"
+    ]
+  },
+  {
+    "query": "someone to clean my sofa",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good couch cleaner?"
+    ]
+  },
+  {
+    "query": "who can paint my apartment",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good house painter in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "fix my macbook",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a reliable place for Mac repairs?",
+      "Where can I get an older MacBook Air repaired in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "photos for passport",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Where can I get passport photos taken in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "rent a car cheap",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a cheap car rental company?"
+    ]
+  },
+  {
+    "query": "boxing lessons",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a boxing coach in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "where to get my nails done",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Are there any nail salons in Tel Aviv that accept walk-ins?",
+      "Can anyone recommend a nail salon or nail technician in Tel Aviv?",
+      "Can anyone recommend a nail technician in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "dog haircut",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good dog groomer in Tel Aviv?",
+      "Can anyone recommend dog groomers in North Tel Aviv?"
+    ]
+  },
+  {
+    "query": "car broke down on the highway",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a roadside assistance service?"
+    ]
+  },
+  {
+    "query": "moving boxes",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Where is the best place to get cardboard moving boxes in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "quiet place to work from",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a coworking space or cafe open at night?",
+      "Does anyone have recommendations for a quiet coffee shop where I could take a meeting?",
+      "What are some recommended cafes to work from in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "bar to watch basketball",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Are there any kosher sports bars in Tel Aviv?",
+      "Can anyone recommend a sports bar to watch the NBA finals?"
+    ]
+  },
+  {
+    "query": "found a hurt bat",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Who can I contact if I found an injured bat?"
+    ]
+  },
+  {
+    "query": "shots before traveling abroad",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone suggest a travel clinic in Tel Aviv for pre-travel vaccines?"
+    ]
+  },
+  {
+    "query": "english tutor for my kid",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Are there any English language tutors who also speak Hebrew?",
+      "Can anyone recommend a native English-speaking children's tutor in the Merkaz (center) area for after gan (kindergarten)?"
+    ]
+  },
+  {
+    "query": "Cellcom",
+    "group": "answer-only",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a reliable home Wi-Fi provider in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "Noam Locksmith",
+    "group": "answer-only",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a reliable locksmith in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "SimpleTax",
+    "group": "answer-only",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good accountant or CPA (especially for Olim and US/Israel taxes)?"
+    ]
+  },
+  {
+    "query": "bagels",
+    "group": "category",
+    "category": "Food & Restaurants",
+    "expected": [
+      "Where can I buy bagels in Tel Aviv, aside from Schmearz and Good Bagels?",
+      "Where is the best place in Tel Aviv to buy a large quantity of plain whole bagels?"
+    ]
+  },
+  {
+    "query": "massage",
+    "group": "category",
+    "category": "Health",
+    "expected": [
+      "Can anyone recommend a good massage therapist in Tel Aviv?",
+      "Can anyone recommend a place for a scalp or head massage?",
+      "What are the best Thai massage places in Tel Aviv?"
+    ]
+  }
+]

@@ -1,0 +1,515 @@
+[
+  {
+    "query": "mazgan guy",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend an air conditioning technician in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "mazgan technician",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend an air conditioning technician in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "musach to fix my car",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a reliable car repair garage (mosach) in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "mosach for car test",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a garage (musach) to do an annual vehicle inspection (test), even outside Tel Aviv?"
+    ]
+  },
+  {
+    "query": "moked",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "What urgent care or emergency room options are available in Tel Aviv for someone insured with Maccabi?",
+      "Where can a visitor find an urgent care medical clinic in or around Tel Aviv?"
+    ]
+  },
+  {
+    "query": "mokad open at night",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "What urgent care or emergency room options are available in Tel Aviv for someone insured with Maccabi?",
+      "Where can a visitor find an urgent care medical clinic in or around Tel Aviv?"
+    ]
+  },
+  {
+    "query": "hasaot driver",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a hasaot (shuttle / transportation) driver?"
+    ]
+  },
+  {
+    "query": "tailor for madim",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good tailor for madim (military uniforms)?"
+    ]
+  },
+  {
+    "query": "hotel with miklat",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Does anyone know hotels in Tel Aviv that have underground miklats (bomb shelters)?"
+    ]
+  },
+  {
+    "query": "best ulpan",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "What is the best Ulpan (Hebrew language school) in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "moreh nehiga",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend an English-speaking driving instructor (moreh nehiga) in Tel Aviv?",
+      "Can anyone recommend a good driving instructor in Tel Aviv?",
+      "Can anyone recommend a good driving instructor in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "sufganiot",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good bakery to get sufganiyot (Hanukkah doughnuts) in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "jachnun",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Where in the shuk (market) can I get jachnun (Yemenite slow-cooked pastry) to heat up for Shabbat?"
+    ]
+  },
+  {
+    "query": "mikvah for dishes",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Is there a mikveh (ritual immersion pool) for dishes near Dizengoff Center?"
+    ]
+  },
+  {
+    "query": "tallis",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Where can I buy a nice tallit (prayer shawl) in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "Ichilov",
+    "group": "answer-only",
+    "category": null,
+    "expected": [
+      "What urgent care or emergency room options are available in Tel Aviv for someone insured with Maccabi?"
+    ]
+  },
+  {
+    "query": "Tzofar",
+    "group": "answer-only",
+    "category": null,
+    "expected": [
+      "What is a good app for receiving location-based rocket siren alerts?"
+    ]
+  },
+  {
+    "query": "Korkifix",
+    "group": "answer-only",
+    "category": null,
+    "expected": [
+      "Where is the best place to buy an electric scooter in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "Halpers",
+    "group": "answer-only",
+    "category": null,
+    "expected": [
+      "Where is the best place to find new or second-hand books in English?"
+    ]
+  },
+  {
+    "query": "Zoolu",
+    "group": "answer-only",
+    "category": null,
+    "expected": [
+      "Where can I order dog food (specifically Aboriginal) with delivery in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "someone to fix my AC",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend an air conditioning technician in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "cockroaches in my apartment",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend an exterminator in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "leaking pipe under the sink",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a reliable plumber in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "app that warns about missiles",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "What is a good app for receiving location-based rocket siren alerts?"
+    ]
+  },
+  {
+    "query": "flu vaccine without appointment",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Is there a clinic in Tel Aviv where I can get a walk-in flu shot without needing a doctor's appointment?"
+    ]
+  },
+  {
+    "query": "hebrew lessons",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "What is the best Ulpan (Hebrew language school) in Tel Aviv?",
+      "Can anyone recommend a private Hebrew tutor?"
+    ]
+  },
+  {
+    "query": "get rid of old clothes",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Where can I donate clothing in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "guys haircut",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good barber in or near Bavli?",
+      "Can anyone recommend a good men's barbershop in or near the Old North that is reasonably priced?",
+      "What is the best place to get a haircut in Tel Aviv?",
+      "Can anyone recommend a good barber in Tel Aviv?",
+      "Does anyone know a good haircut place for a man with curly or wavy hair?"
+    ]
+  },
+  {
+    "query": "tailor",
+    "group": "category",
+    "category": "Bureaucracy & Services",
+    "expected": [
+      "Can anyone recommend a good tailor or seamstress in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "driving instructor",
+    "group": "category",
+    "category": "Transport",
+    "expected": [
+      "Can anyone recommend a good driving instructor in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "movers",
+    "group": "category",
+    "category": "Home & Repairs",
+    "expected": [
+      "Can anyone recommend a reliable moving company in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "chashmalai",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good and trustworthy electrician?"
+    ]
+  },
+  {
+    "query": "manulan locked out",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a reliable locksmith in Tel Aviv?",
+      "Does anyone have a contact or emergency service to open or break down a door when someone is locked in a bathroom?"
+    ]
+  },
+  {
+    "query": "tofer to hem pants",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good tailor in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "kipot",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Does anyone have a recommendation for a company that embroiders kippahs?",
+      "Does anyone know where I can buy kippahs in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "sufganiot without filling",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Where can I get unfilled doughnuts to fill at home?"
+    ]
+  },
+  {
+    "query": "mehadrin cafe",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Does anyone know of any mehadrin (strictly kosher) cafes in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "instalator",
+    "group": "transliteration",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a reliable plumber in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "a/c not cooling",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Can anyone recommend an air conditioning technician in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "english speaking gp maccabi",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good English-speaking Maccabi family doctor in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "ent doctor",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Can anyone recommend an ENT (ear, nose, and throat doctor) in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "physio",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good physiotherapist in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "derm that takes maccabi",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good dermatologist in Tel Aviv who accepts Maccabi?"
+    ]
+  },
+  {
+    "query": "taxi to jlm",
+    "group": "shorthand",
+    "category": null,
+    "expected": [
+      "Does anyone know a reliable taxi driver or service with good rates from Tel Aviv to Jerusalem?",
+      "Does anyone know of an operating taxi service for a drive from Netanya to Jerusalem?"
+    ]
+  },
+  {
+    "query": "someone to put up my tv",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Looking for someone to mount a TV on my wall. Any recommendations?"
+    ]
+  },
+  {
+    "query": "my fridge broke",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a fridge repair person?"
+    ]
+  },
+  {
+    "query": "washing machine stopped working",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a washing machine repair technician?"
+    ]
+  },
+  {
+    "query": "get rid of mold in apartment",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Does anyone have a mold specialist they recommend?"
+    ]
+  },
+  {
+    "query": "lawyer to look at my lease",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a lawyer for apartment rental contracts in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "somewhere to keep my stuff for a few months",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Does anyone know of a storage facility or storage unit rental in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "cheap plants",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Where are the best and cheapest places to buy plants in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "give blood",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Where can I donate blood in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "gym without monthly membership",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Are there any gyms that offer day passes instead of a full monthly membership?"
+    ]
+  },
+  {
+    "query": "kosher sushi",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Does anyone know if there is an all-you-can-eat kosher sushi place somewhere in the Merkaz (central district)?",
+      "What is the best kosher sushi place?"
+    ]
+  },
+  {
+    "query": "shawarma",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Besides Yashka, what is the best shawarma place in Tel Aviv?",
+      "Where are good kosher places to order shawarma, chicken, or falafel by the kilo?",
+      "Where is the best kosher shawarma in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "cake with a picture printed on it",
+    "group": "paraphrase",
+    "category": null,
+    "expected": [
+      "Does anyone know a kosher bakery that does photo prints on cakes, preferably around the Old North?",
+      "Where can I print edible paper for cake decorating?"
+    ]
+  },
+  {
+    "query": "Esti",
+    "group": "answer-only",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a good tailor in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "PazGaz",
+    "group": "answer-only",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a qualified gas technician or company in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "Airalo",
+    "group": "answer-only",
+    "category": null,
+    "expected": [
+      "Which cellular provider or SIM card do you recommend in Israel?"
+    ]
+  },
+  {
+    "query": "Suncar",
+    "group": "answer-only",
+    "category": null,
+    "expected": [
+      "Can anyone recommend a cheap car rental company?"
+    ]
+  },
+  {
+    "query": "timer",
+    "group": "category",
+    "category": "Shopping",
+    "expected": [
+      "Where can I buy a Shabbat outlet timer in Tel Aviv?"
+    ]
+  },
+  {
+    "query": "insurance",
+    "group": "category",
+    "category": "Health",
+    "expected": [
+      "Can anyone recommend travel health insurance?",
+      "Does anyone know of an insurance provider that allows you to buy travel insurance while already abroad?"
+    ]
+  }
+]
