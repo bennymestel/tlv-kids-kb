@@ -4,6 +4,7 @@ data/*
 !data/qa.json
 !data/eval_queries.json
 !data/eval_heldout.json
+!data/question_embeddings.npz
 
 .venv/
 __pycache__/

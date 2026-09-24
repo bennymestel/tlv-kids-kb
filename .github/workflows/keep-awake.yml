@@ -1,0 +1,33 @@
+# Streamlit Community Cloud puts apps to sleep after ~12 hours without visitors, and waking
+# one takes a minute or more. This opens the site in a real browser every 6 hours so it
+# never sleeps (a plain HTTP ping doesn't count as a visit). If it's asleep anyway, it
+# clicks the "get this app back up" button.
+name: Keep app awake
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: # lets you run it by hand from the Actions tab
+
+jobs:
+  visit:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pip install playwright && playwright install --with-deps chromium
+      - shell: python
+        env:
+          APP_URL: https://tlv-kids-kb.streamlit.app/
+        run: |
+          import os
+          from playwright.sync_api import sync_playwright
+
+          with sync_playwright() as p:
+              page = p.chromium.launch().new_page()
+              page.goto(os.environ["APP_URL"], timeout=120_000)
+              wake = page.get_by_role("button", name="Yes, get this app back up!")
+              try:
+                  wake.click(timeout=15_000)
+                  print("App was asleep: woke it up")
+              except Exception:
+                  print("App was awake")
+              page.wait_for_timeout(30_000)  # stay long enough to count as a visit

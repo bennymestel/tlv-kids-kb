@@ -11,12 +11,16 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import chromadb
+import numpy as np
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 from rank_bm25 import BM25Okapi
 
 from query_terms import expand
 
 QA_PATH = Path("data/qa.json")
+# Question embeddings saved so the app doesn't recompute them on every start (the slow part).
+# Stored with the questions they came from; if qa.json changes, they're recomputed and resaved.
+EMBEDDINGS_PATH = Path("data/question_embeddings.npz")
 
 # How many results each search contributes before fusion. Kept small: with long
 # lists, weak results that appear low in *both* lists outscore a result that one
@@ -41,6 +45,16 @@ def trigrams(text: str) -> list[str]:
     return grams
 
 
+def question_embeddings(questions: list[str], ef) -> np.ndarray:
+    if EMBEDDINGS_PATH.exists():
+        saved = np.load(EMBEDDINGS_PATH)
+        if saved["questions"].tolist() == questions:
+            return saved["embeddings"]
+    embeddings = np.array(ef(questions), dtype=np.float32)
+    np.savez(EMBEDDINGS_PATH, questions=np.array(questions), embeddings=embeddings)
+    return embeddings
+
+
 def load():
     qas = json.loads(QA_PATH.read_text())
 
@@ -50,9 +64,11 @@ def load():
 
     bm25 = None
     if qas:
+        questions = [qa["question"] for qa in qas]
         collection.add(
             ids=[str(i) for i in range(len(qas))],
-            documents=[qa["question"] for qa in qas],
+            documents=questions,
+            embeddings=question_embeddings(questions, ef),
             metadatas=[{"category": qa["category"]} for qa in qas],
         )
         bm25 = BM25Okapi([
