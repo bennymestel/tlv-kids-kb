@@ -27,6 +27,18 @@ EMBEDDINGS_PATH = Path("data/question_embeddings.npz")
 # search ranks #1 (e.g. an exact name match), which dropped eval hit@3 from 0.84 to 0.65.
 CANDIDATES = 10
 RRF_K = 60  # standard reciprocal rank fusion constant
+# Drop results much weaker than the best one for the same query. Relative, not absolute:
+# absolute scores didn't separate right from wrong (some correct matches scored worse than
+# the best match for an unrelated query). Tuned on eval_queries.json: ~10 -> ~4 results shown.
+MAX_DISTANCE_GAP = 0.15  # keep if embedding distance is within this of the best result's
+MIN_KEYWORD_SHARE = 0.6  # or if keyword score is at least this share of the best result's
+# Show nothing if no search word appears in the data and no question is close in meaning.
+MIN_WORD_COVERAGE = 0.5
+NO_MATCH_DISTANCE = 0.6
+STOPWORDS = set(
+    "the and for with any anyone someone somewhere good best who where what how get can "
+    "does are you your our their this that from near need looking recommend recommendation".split()
+)
 
 
 @dataclass
@@ -43,6 +55,12 @@ def trigrams(text: str) -> list[str]:
         padded = f" {word} "
         grams.extend(padded[i:i + 3] for i in range(len(padded) - 2))
     return grams
+
+
+def word_coverage(index: Index, word: str) -> float:
+    """Largest share of the word's trigrams found together in one Q&A entry."""
+    grams = set(trigrams(word))
+    return max(len(grams & doc.keys()) for doc in index.bm25.doc_freqs) / len(grams)
 
 
 def question_embeddings(questions: list[str], ef) -> np.ndarray:
@@ -94,8 +112,17 @@ def search(index: Index, qas, query: str, category: str | None = None, k: int = 
         query_texts=[query], n_results=min(CANDIDATES, len(allowed)), where=where
     )
     embedding_ranked = [int(i) for i in res["ids"][0]]
+    distance = dict(zip(embedding_ranked, res["distances"][0]))
+    best_distance = min(distance.values())
+
+    words = [w for w in re.findall(r"\w+", query.lower()) if len(w) >= 3 and w not in STOPWORDS]
+    if best_distance > NO_MATCH_DISTANCE and not any(
+        word_coverage(index, w) >= MIN_WORD_COVERAGE for w in words
+    ):
+        return []
 
     scores = index.bm25.get_scores(trigrams(query))
+    best_score = max(scores[i] for i in allowed)
     keyword_ranked = sorted((i for i in allowed if scores[i] > 0), key=lambda i: -scores[i])
     keyword_ranked = keyword_ranked[:CANDIDATES]
 
@@ -105,5 +132,9 @@ def search(index: Index, qas, query: str, category: str | None = None, k: int = 
         for rank, i in enumerate(ranked, start=1):
             fused[i] = fused.get(i, 0.0) + 1 / (RRF_K + rank)
 
-    best = sorted(fused, key=lambda i: -fused[i])[:k]
+    def strong(i):
+        close = i in distance and distance[i] - best_distance <= MAX_DISTANCE_GAP
+        return close or (best_score > 0 and scores[i] >= MIN_KEYWORD_SHARE * best_score)
+
+    best = [i for i in sorted(fused, key=lambda i: -fused[i]) if strong(i)][:k]
     return [qas[i] for i in best]

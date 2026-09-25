@@ -1,6 +1,7 @@
 """One-time build: WhatsApp export -> data/qa.json
 
 Usage: GEMINI_API_KEY=... python build.py data/export
+       GEMINI_API_KEY=... python build.py --merge-only   (redo merge + categories only)
 
 Writes intermediate outputs to data/log/ so each step can be inspected:
   data/log/parsed.json     - messages after parsing (incl. resolved contacts)
@@ -14,16 +15,27 @@ import os
 import re
 import sys
 import time
+from enum import Enum
 from pathlib import Path
 
 from google import genai
 from google.genai import errors as genai_errors
 from pydantic import BaseModel
 
-CATEGORIES = [
-    "Home & Repairs", "Shopping", "Kids & Education", "Health",
-    "Bureaucracy & Services", "Food & Restaurants", "Transport", "Other",
-]
+CATEGORIES = {
+    "Home & Repairs": "fixing, cleaning or moving a home: plumbers, electricians, AC, handymen, "
+                      "locksmiths, cleaners, movers, pest control, appliance repair, renovation",
+    "Shopping": "where to buy things: stores, online shops, furniture, clothes, electronics, Judaica",
+    "Kids & Education": "children, schools, gan, babysitters, tutors, classes, ulpan and Hebrew lessons",
+    "Health": "doctors, dentists, clinics, therapists, physio, pharmacies, gyms and fitness",
+    "Bureaucracy & Services": "lawyers, accountants, notaries, insurance, phone and internet "
+                              "providers, printing, photographers, tailors, dry cleaners, "
+                              "hair, nails and beauty",
+    "Food & Restaurants": "restaurants, cafes, bars, takeout, bakeries, butchers, groceries, catering",
+    "Transport": "cars, taxis, drivers, shuttles, car rental and repair, driving lessons, bikes, "
+                 "scooters",
+    "Other": "anything else: religious services, events, DJs, pets, tours, travel, donations",
+}
 
 CHUNK_SIZE = 300
 MODEL = "gemini-3.8-flash"
@@ -170,17 +182,15 @@ class Answer(BaseModel):
 
 class QA(BaseModel):
     question: str
-    category: str
     answers: list[Answer]
 
 
-EXTRACT_PROMPT = f"""You are reading a slice of a WhatsApp group chat for newcomers to Tel Aviv.
+EXTRACT_PROMPT = """You are reading a slice of a WhatsApp group chat for newcomers to Tel Aviv.
 Each line is "date | text".
 
 Find messages that ask for a local recommendation (plumbers, shops, services, etc.)
 and were answered usefully. For each one, output:
 - question: rewritten as a clear, standalone English question
-- category: exactly one of {CATEGORIES}
 - answers: the useful replies, each with:
   - text: the recommendation, keeping names/phone numbers/places
   - name / phone: fill in if the answer recommends a specific person or business
@@ -193,7 +203,7 @@ e.g. "shiputznik (renovation contractor)".
 Skip small talk and questions with no useful answer. Do not include author names.
 
 Messages:
-{{chunk}}
+{chunk}
 """
 
 
@@ -220,7 +230,7 @@ def extract(client, messages: list[dict]) -> list[QA]:
             chunk_num, n_chunks, len(lines[i:i + CHUNK_SIZE]), len(chunk_qas),
         )
         for qa in chunk_qas:
-            logger.debug("  [%s] %s (%d answers)", qa.category, qa.question, len(qa.answers))
+            logger.debug("  %s (%d answers)", qa.question, len(qa.answers))
 
         # Written after every chunk (not just at the end) so a failure deep into a
         # long run still leaves the completed chunks inspectable/recoverable.
@@ -231,7 +241,47 @@ def extract(client, messages: list[dict]) -> list[QA]:
     return all_qas
 
 
-# --- 3. Merge duplicates per category (Gemini pass 2) -------------------
+# --- 3. Assign categories (Gemini pass 2) --------------------------------
+# Done once over all questions, so similar questions land in the same category.
+
+Category = Enum("Category", {name: name for name in CATEGORIES})
+
+
+class Categorized(BaseModel):
+    number: int
+    category: Category
+
+
+CATEGORIZE_PROMPT = """Assign each numbered question from a Tel Aviv newcomers group chat
+to exactly one category. Similar questions must get the same category.
+
+Categories:
+{categories}
+
+Questions:
+{questions}
+"""
+
+
+def categorize(client, qas: list[QA]) -> list[str]:
+    resp = generate_with_retry(
+        client,
+        model=MODEL,
+        contents=CATEGORIZE_PROMPT.format(
+            categories="\n".join(f"- {name}: {desc}" for name, desc in CATEGORIES.items()),
+            questions="\n".join(f"{i}. {qa.question}" for i, qa in enumerate(qas)),
+        ),
+        config={"response_mime_type": "application/json", "response_schema": list[Categorized]},
+    )
+    category = {c.number: c.category.value for c in resp.parsed or []}
+    missing = [qa.question for i, qa in enumerate(qas) if i not in category]
+    if missing:
+        logger.warning("No category returned for %d questions, using Other: %s",
+                       len(missing), missing)
+    return [category.get(i, "Other") for i in range(len(qas))]
+
+
+# --- 4. Merge duplicates per category (Gemini pass 3) --------------------
 
 class MergedAnswer(BaseModel):
     text: str
@@ -243,7 +293,6 @@ class MergedAnswer(BaseModel):
 
 class MergedQA(BaseModel):
     question: str
-    category: str
     answers: list[MergedAnswer]
 
 
@@ -251,23 +300,26 @@ MERGE_PROMPT = """Below are recommendation Q&A pairs from a Tel Aviv newcomers g
 all in the category "{category}". The same question is often asked multiple times in
 different words, and the same person/business is often recommended multiple times.
 
-Merge questions that ask the same thing into one canonical question (pick the clearest
-phrasing). Within each merged question, combine answers that recommend the same
-person/business/place (same phone number, or same name) into a single answer:
-set "count" to how many times it was recommended, and "date" to the most recent date.
-Sort answers within each question by count, descending.
+Merge questions that ask for exactly the same thing into one canonical question (pick the
+clearest phrasing). Questions with any meaningful difference are NOT the same: a requirement
+("English-speaking", "kosher", "delivers", "open on Saturday"), a different place
+("Tel Aviv" vs "Jerusalem", "North Tel Aviv") or a different service ("cleaner" vs
+"dry cleaner"). Soft wishes ("good", "cheap", "affordable", "preferably ...") are not a
+meaningful difference.
 
-Keep the "category" field as "{category}" for every output item.
+Within each merged question, combine answers that recommend the same person/business/place
+(same phone number, or same name) into a single answer: set "count" to how many times it
+was recommended, and "date" to the most recent date. Sort answers by count, descending.
 
 Q&A pairs (JSON):
 {qas}
 """
 
 
-def merge(client, qas: list[QA]) -> list[MergedQA]:
+def merge(client, qas: list[QA], categories: list[str]) -> list[dict]:
     by_category: dict[str, list[QA]] = {}
-    for qa in qas:
-        by_category.setdefault(qa.category, []).append(qa)
+    for qa, category in zip(qas, categories):
+        by_category.setdefault(category, []).append(qa)
 
     merged = []
     for category, items in by_category.items():
@@ -284,15 +336,12 @@ def merge(client, qas: list[QA]) -> list[MergedQA]:
             },
         )
         result = resp.parsed or []
-        merged.extend(result)
         logger.info("Merge [%s]: %d raw QAs -> %d merged QAs", category, len(items), len(result))
-        for qa in result:
-            dupes = [a for a in qa.answers if a.count > 1]
-            if dupes:
-                logger.debug(
-                    "  merged dupes in %r: %s",
-                    qa.question, [(a.name or a.text[:30], a.count) for a in dupes],
-                )
+        merged.extend(
+            {"question": qa.question, "category": category,
+             "answers": [a.model_dump() for a in qa.answers]}
+            for qa in result
+        )
     return merged
 
 
@@ -315,8 +364,8 @@ def setup_logging():
 
 def main():
     if len(sys.argv) != 2:
-        raise SystemExit("Usage: python build.py <export_folder>")
-    folder = Path(sys.argv[1])
+        raise SystemExit("Usage: python build.py <export_folder>\n"
+                         "       python build.py --merge-only   (reuses data/log/extracted.json)")
     setup_logging()
 
     api_key = os.environ.get("GEMINI_API_KEY")
@@ -324,19 +373,24 @@ def main():
         raise SystemExit("Set GEMINI_API_KEY")
     client = genai.Client(api_key=api_key)
 
-    logger.info("Parsing chat export from %s", folder)
-    messages = parse(folder)
+    if sys.argv[1] == "--merge-only":
+        qas = [QA(**qa) for qa in json.loads((LOG_DIR / "extracted.json").read_text())]
+    else:
+        folder = Path(sys.argv[1])
+        logger.info("Parsing chat export from %s", folder)
+        messages = parse(folder)
 
-    logger.info("Extracting Q&A pairs (pass 1)")
-    qas = extract(client, messages)
+        logger.info("Extracting Q&A pairs (pass 1)")
+        qas = extract(client, messages)
 
-    logger.info("Merging duplicates per category (pass 2)")
-    merged = merge(client, qas)
+    logger.info("Assigning categories (pass 2)")
+    categories = categorize(client, qas)
+
+    logger.info("Merging duplicates per category (pass 3)")
+    merged = merge(client, qas, categories)
 
     out_path = Path("data/qa.json")
-    out_path.write_text(
-        json.dumps([m.model_dump() for m in merged], ensure_ascii=False, indent=2)
-    )
+    out_path.write_text(json.dumps(merged, ensure_ascii=False, indent=2))
     logger.info("Wrote %d final QAs to %s", len(merged), out_path)
     logger.info("Inspect data/log/parsed.json, data/log/extracted.json and data/log/build.log "
                 "to see how each step behaved.")
