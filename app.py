@@ -36,15 +36,50 @@ def note(a):
     return text if re.search(r"\w", text) else ""
 
 
+CATEGORY_STYLE = {
+    "Food & Restaurants": ("🍽️", "orange"),
+    "Bureaucracy & Services": ("📋", "blue"),
+    "Shopping": ("🛍️", "violet"),
+    "Home & Repairs": ("🔧", "red"),
+    "Health": ("🩺", "green"),
+    "Transport": ("🚗", "yellow"),
+    "Kids & Education": ("🧸", "primary"),
+    "Other": ("✨", "gray"),
+}
+
+
+def category_label(category):
+    return f"{CATEGORY_STYLE.get(category, ('✨', 'gray'))[0]} {category}"
+
+
+def phone_links(phone):
+    """Tap-to-call link, plus a WhatsApp link for mobile numbers."""
+    digits = re.sub(r"\D", "", phone)
+    if phone.startswith("+"):
+        intl = digits
+    elif digits.startswith("0"):
+        intl = "972" + digits[1:]
+    elif len(digits) == 9 and digits.startswith("5"):
+        intl = "972" + digits
+    else:
+        return f"📞 [{phone}](tel:{digits})"
+    links = f"📞 [{phone}](tel:+{intl})"
+    if not intl.startswith("972") or intl[3] == "5":
+        links += f" · 💬 [WhatsApp](https://wa.me/{intl})"
+    return links
+
+
 def show_qa(qa):
     st.markdown(f"### {qa['question']}")
-    st.caption(qa["category"])
+    color = CATEGORY_STYLE.get(qa["category"], ("", "gray"))[1]
+    st.markdown(f":{color}-badge[{category_label(qa['category'])}]")
     for a in sorted(qa["answers"], key=lambda a: -a.get("count", 1)):
         parts = []
         if a.get("name"):
-            parts.append(f"**{a['name']}**")
+            # Isolate the name so a Hebrew name doesn't flip the whole line right-to-left.
+            parts.append(f"\u2066**{a['name']}**\u2069")
         if a.get("phone"):
-            parts.append(f"📞 {a['phone']}")
+            parts.append(phone_links(a["phone"]))
         if a.get("count", 1) > 1:
             parts.append(f"recommended ×{a['count']}")
         if a.get("date"):
@@ -76,18 +111,36 @@ def on_category():
 query = st.text_input(
     "Search", placeholder="e.g. renovation contractor", key="query", on_change=on_search
 )
-category = st.pills("Or browse a category", categories, key="category", on_change=on_category)
+category = st.pills(
+    "Or browse a category", categories, key="category", on_change=on_category,
+    format_func=category_label,
+)
+
+
+def count(n):
+    st.caption(f"{n} result{'s' if n != 1 else ''}")
+
 
 if query.strip():
     # Search always covers every category.
     results = search(index, qas, query, None)
     if not results:
         st.info("No results.")
+    else:
+        count(len(results))
     for qa in results:
         show_qa(qa)
 elif category:
     in_category = [qa for qa in qas if qa["category"] == category]
+    count(len(in_category))
     for qa in sorted(in_category, key=recommendations, reverse=True):
+        show_qa(qa)
+else:
+    st.markdown(
+        "Recommendations shared in the TLV kids group. "
+        "Search above or pick a category."
+    )
+    for qa in sorted(qas, key=recommendations, reverse=True)[:5]:
         show_qa(qa)
 
 st.caption(
