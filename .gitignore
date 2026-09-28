@@ -10,3 +10,6 @@ data/*
 __pycache__/
 *.pyc
 .DS_Store
+
+# Google service-account key and sheet ID: secret.
+.streamlit/secrets.toml

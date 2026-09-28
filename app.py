@@ -3,6 +3,7 @@ import re
 import streamlit as st
 
 from search import load, search
+from sheet_log import log_feedback, log_rating, log_search
 
 st.set_page_config(page_title="TLV Kids KB", page_icon="assets/icon.jpg")
 st.title("TLV Kids Knowledge Base")
@@ -127,10 +128,21 @@ def count(n):
 if query.strip():
     # Search always covers every category.
     results = search(index, qas, query, None)
+    stripped = query.strip()
+    if st.session_state.get("last_logged") != stripped:
+        log_search(stripped, results)
+        st.session_state.last_logged = stripped
     if not results:
         st.info("No results.")
     else:
         count(len(results))
+        st.caption("Are these results helpful?")
+        st.feedback(
+            "thumbs", key=f"rating_{stripped}",
+            on_change=lambda q=stripped, r=results: log_rating(
+                q, "up" if st.session_state[f"rating_{q}"] == 1 else "down", r
+            ),
+        )
     for qa in results:
         show_qa(qa)
 elif category:
@@ -146,7 +158,13 @@ else:
     for qa in sorted(qas, key=recommendations, reverse=True)[:5]:
         show_qa(qa)
 
+with st.form("feedback", clear_on_submit=True):
+    text = st.text_area("Suggestion, bug, or a recommendation we're missing?")
+    if st.form_submit_button("Send") and text.strip():
+        log_feedback(text.strip())
+        st.success("Thanks!")
+
 st.caption(
-    "Found a bug, have a suggestion, or listed here and want to be removed? "
+    "Want to be removed from a listing? "
     "Email [bennymestel@gmail.com](mailto:bennymestel@gmail.com)"
 )
