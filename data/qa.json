@@ -7001,8 +7001,8 @@
         "text": "Wizo center! On king George",
         "name": "WIZO",
         "phone": null,
-        "count": 3,
-        "date": "2026-03-25"
+        "count": 4,
+        "date": "2026-09-27"
       },
       {
         "text": "https://maps.app.goo.gl/jyWU7pQDCdNaatTL7?g_st=iw",
@@ -7024,6 +7024,13 @@
         "phone": null,
         "count": 1,
         "date": "2025-10-28"
+      },
+      {
+        "text": "There’s a clothing donation bin on Adam HaCohen street right in front of the school",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-27"
       }
     ]
   },
@@ -8696,6 +8703,198 @@
         "phone": null,
         "count": 1,
         "date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "question": "Where can I find good mint chocolate chip ice cream in Tel Aviv?",
+    "category": "Food & Restaurants",
+    "answers": [
+      {
+        "text": "I had the best mint choc chip at Rivareno Gelato last night 🫠",
+        "name": "Rivareno Gelato",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-23"
+      }
+    ]
+  },
+  {
+    "question": "Can anyone recommend a great kosher meat restaurant for a special occasion in Tel Aviv?",
+    "category": "Food & Restaurants",
+    "answers": [
+      {
+        "text": "I loveee rashel if you like morrocan food and want a good vibe",
+        "name": "Rashel",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-23"
+      }
+    ]
+  },
+  {
+    "question": "Is there a kosher butcher open in Tel Aviv right now?",
+    "category": "Food & Restaurants",
+    "answers": [
+      {
+        "text": "La boucherie francaise on bograshov but they may not have much left",
+        "name": "La boucherie francaise",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-24"
+      }
+    ]
+  },
+  {
+    "question": "Which kosher restaurants in Tel Aviv have a sukkah (temporary outdoor hut for dining during Sukkot)?",
+    "category": "Food & Restaurants",
+    "answers": [
+      {
+        "text": "There isn't, but I've spotted sukkot (temporary outdoor huts for Sukkot) outside Simo, Craft Pizza, Good Bagels, and forgotten where else. Perhaps others can add",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-27"
+      }
+    ]
+  },
+  {
+    "question": "Can anyone recommend a good Israeli notary?",
+    "category": "Bureaucracy & Services",
+    "answers": [
+      {
+        "text": "[CONTACT: Notary Lawyer TLV, +972 54-456-6223]",
+        "name": "Notary Lawyer TLV",
+        "phone": "+972 54-456-6223",
+        "count": 1,
+        "date": "2026-09-23"
+      },
+      {
+        "text": "He was great, happy to answer any questions",
+        "name": "Notary Lawyer TLV",
+        "phone": "+972 54-456-6223",
+        "count": 1,
+        "date": "2026-09-23"
+      }
+    ]
+  },
+  {
+    "question": "Where can I buy linen shirts in Tel Aviv?",
+    "category": "Shopping",
+    "answers": [
+      {
+        "text": "renuar has a bunch",
+        "name": "Renuar",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-23"
+      }
+    ]
+  },
+  {
+    "question": "Where can I buy a lulav and etrog (four species set used during the holiday of Sukkot) in Tel Aviv?",
+    "category": "Shopping",
+    "answers": [
+      {
+        "text": "Kikar Rabin tomorrow 10-20, Friday 9-14",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-23"
+      },
+      {
+        "text": "86 Ben Yehuda or Kikar Rabin",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-23"
+      },
+      {
+        "text": "At the pop up market on kikar rabin 09:00 - 14:00",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-24"
+      }
+    ]
+  },
+  {
+    "question": "Where can I buy a travel or pop-up sukkah (temporary outdoor hut used during Sukkot)?",
+    "category": "Shopping",
+    "answers": [
+      {
+        "text": "They have a few options at Dan Deal that seem pretty small / pop up",
+        "name": "Dan Deal",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-24"
+      },
+      {
+        "text": "Best home",
+        "name": "Best home",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-24"
+      },
+      {
+        "text": "Check Osher Ad",
+        "name": "Osher Ad",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-27"
+      },
+      {
+        "text": "Wolt",
+        "name": "Wolt",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-27"
+      }
+    ]
+  },
+  {
+    "question": "Can anyone recommend an English bookstore in Tel Aviv?",
+    "category": "Shopping",
+    "answers": [
+      {
+        "text": "https://maps.app.goo.gl/gdn9ZBP98tG1N6zN9?g_st=ic Run by a good friend. Great selection and awesome bookshop vibes",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "question": "Where can I borrow or rent a burgundy bridesmaid dress in Israel?",
+    "category": "Shopping",
+    "answers": [
+      {
+        "text": "https://www.instagram.com/bridesmaidsofisrael?stkn=MThkeGNxeTJrZXVlNQ%3D%3D&utm_source=qr",
+        "name": "Bridesmaids of Israel",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-26"
+      }
+    ]
+  },
+  {
+    "question": "Where can I find a good place that duplicates keys that require an authorization card?",
+    "category": "Home & Repairs",
+    "answers": [
+      {
+        "text": "https://maps.app.goo.gl/9SjvsMJX4VwqkZ6TA?g_st=ac",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-24"
+      },
+      {
+        "text": "https://maps.app.goo.gl/Q9oD5sn6pMKcimvq6?g_st=ac",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-24"
       }
     ]
   }

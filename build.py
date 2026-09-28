@@ -104,6 +104,11 @@ def normalize_date(d: str) -> str:
     return f"{year}-{month.zfill(2)}-{day.zfill(2)}"
 
 
+def normalize_time(t: str) -> str:
+    hour, minute = t.split(":")
+    return f"{hour.zfill(2)}:{minute}"
+
+
 def load_vcards(folder: Path) -> dict[str, str]:
     """Map .vcf filename -> 'Name, phone' (or just 'Name' if no phone)."""
     cards = {}
@@ -135,6 +140,7 @@ def parse(folder: Path) -> list[dict]:
         m = LINE_RE.match(line)
         if m:
             date = m.group(1) or m.group(3)
+            clock = m.group(2) or m.group(4)
             body = m.group(6)
             if SKIP_RE.search(body):
                 skipped += 1
@@ -152,7 +158,9 @@ def parse(folder: Path) -> list[dict]:
                     info = raw_name
                     unresolved_contacts += 1
                 body = f"[CONTACT: {info}]"
-            messages.append({"date": normalize_date(date), "text": body})
+            messages.append({
+                "date": normalize_date(date), "time": normalize_time(clock), "text": body,
+            })
         elif line.strip():
             if messages:
                 messages[-1]["text"] += "\n" + line
@@ -202,18 +210,25 @@ e.g. "shiputznik (renovation contractor)".
 
 Skip small talk and questions with no useful answer. Do not include author names.
 
+Lines marked [CONTEXT] are earlier messages included only so you can understand what a
+reply refers to; never create a question or answer from a [CONTEXT] line itself, only
+from the other lines.
+
 Messages:
 {chunk}
 """
 
 
-def extract(client, messages: list[dict]) -> list[QA]:
+def extract(client, messages: list[dict], context_lines: list[str] | None = None) -> list[QA]:
     lines = [f"{m['date']} | {m['text']}" for m in messages]
+    context_block = "\n".join(f"[CONTEXT] {line}" for line in context_lines or [])
     all_qas = []
     n_chunks = (len(lines) + CHUNK_SIZE - 1) // CHUNK_SIZE
     for i in range(0, len(lines), CHUNK_SIZE):
         chunk_num = i // CHUNK_SIZE + 1
         chunk = "\n".join(lines[i:i + CHUNK_SIZE])
+        if context_block:
+            chunk = context_block + "\n" + chunk
         resp = generate_with_retry(
             client,
             model=MODEL,
