@@ -133,7 +133,10 @@ if query.strip():
         log_search(stripped, results)
         st.session_state.last_logged = stripped
     if not results:
-        st.info("No results.")
+        st.info(
+            "No results. This may not have come up in the group yet — "
+            "try different words, or ask the group directly."
+        )
     else:
         count(len(results))
         st.caption("Are these results helpful?")
