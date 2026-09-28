@@ -80,12 +80,15 @@ def show_qa(qa):
             parts.append(f"\u2066**{a['name']}**\u2069")
         if a.get("phone"):
             parts.append(phone_links(a["phone"]))
-        if a.get("count", 1) > 1:
-            parts.append(f"recommended ×{a['count']}")
-        if a.get("date"):
-            parts.append(f"last: {a['date']}")
         if parts:
             st.markdown(" · ".join(parts))
+        meta = []
+        if a.get("count", 1) > 1:
+            meta.append(f"👍 recommended {a['count']}×")
+        if a.get("date"):
+            meta.append(f"last mentioned {a['date']}")
+        if meta:
+            st.caption(" · ".join(meta))
         if note(a):
             st.markdown(f"- {note(a)}")
     st.divider()
