@@ -12,7 +12,7 @@ st.title("TLV Kids Knowledge Base")
 updated = Path("data/updated.txt")
 if updated.exists():
     d = date.fromisoformat(updated.read_text().strip())
-    st.caption(f"Includes messages up to {d.day} {d:%b %Y}")
+    st.caption(f"Includes recommendations shared up to {d.day} {d:%b %Y}")
 
 
 @st.cache_resource
