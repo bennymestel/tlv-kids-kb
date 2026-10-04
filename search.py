@@ -37,7 +37,8 @@ MIN_WORD_COVERAGE = 0.5
 NO_MATCH_DISTANCE = 0.6
 STOPWORDS = set(
     "the and for with any anyone someone somewhere good best who where what how get can "
-    "does are you your our their this that from near need looking recommend recommendation".split()
+    "does are you your our their this that from near need looking recommend recommendation "
+    "tel aviv tlv israel close nearby around area".split()
 )
 
 
@@ -45,6 +46,7 @@ STOPWORDS = set(
 class Index:
     collection: chromadb.Collection
     bm25: BM25Okapi | None
+    vocab: list[set[str]]  # trigrams of each distinct word in the data
 
 
 def trigrams(text: str) -> list[str]:
@@ -58,9 +60,10 @@ def trigrams(text: str) -> list[str]:
 
 
 def word_coverage(index: Index, word: str) -> float:
-    """Largest share of the word's trigrams found together in one Q&A entry."""
+    """Largest share of the word's trigrams found in one word of the data
+    (counted per entry, "hikes" matched "milchik" + "cakes")."""
     grams = set(trigrams(word))
-    return max(len(grams & doc.keys()) for doc in index.bm25.doc_freqs) / len(grams)
+    return max(len(grams & other) for other in index.vocab) / len(grams)
 
 
 def question_embeddings(questions: list[str], ef) -> np.ndarray:
@@ -81,6 +84,12 @@ def load():
     collection = client.create_collection("qa_pairs", embedding_function=ef)
 
     bm25 = None
+    texts = [
+        qa["question"] + " " + " ".join(
+            " ".join(filter(None, [a["text"], a.get("name")])) for a in qa["answers"]
+        )
+        for qa in qas
+    ]
     if qas:
         questions = [qa["question"] for qa in qas]
         collection.add(
@@ -89,13 +98,9 @@ def load():
             embeddings=question_embeddings(questions, ef),
             metadatas=[{"category": qa["category"]} for qa in qas],
         )
-        bm25 = BM25Okapi([
-            trigrams(qa["question"] + " " + " ".join(
-                " ".join(filter(None, [a["text"], a.get("name")])) for a in qa["answers"]
-            ))
-            for qa in qas
-        ])
-    return Index(collection, bm25), qas
+        bm25 = BM25Okapi([trigrams(text) for text in texts])
+    words = {w for text in texts for w in re.findall(r"\w+", text.lower())}
+    return Index(collection, bm25, [set(trigrams(w)) for w in words]), qas
 
 
 def search(index: Index, qas, query: str, category: str | None = None, k: int = 10):
@@ -115,8 +120,17 @@ def search(index: Index, qas, query: str, category: str | None = None, k: int = 
     distance = dict(zip(embedding_ranked, res["distances"][0]))
     best_distance = min(distance.values())
 
-    words = [w for w in re.findall(r"\w+", query.lower()) if len(w) >= 3 and w not in STOPWORDS]
-    if best_distance > NO_MATCH_DISTANCE and not any(
+    all_words = re.findall(r"\w+", query.lower())
+    topic = [w for w in all_words if w not in STOPWORDS]
+    if not topic:
+        return []
+    topic_distance = best_distance
+    if len(topic) < len(all_words):
+        topic_distance = index.collection.query(
+            query_texts=[" ".join(topic)], n_results=1, where=where
+        )["distances"][0][0]
+    words = [w for w in topic if len(w) >= 3]
+    if topic_distance > NO_MATCH_DISTANCE and not any(
         word_coverage(index, w) >= MIN_WORD_COVERAGE for w in words
     ):
         return []
