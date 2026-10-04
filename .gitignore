@@ -5,6 +5,7 @@ data/*
 !data/eval_queries.json
 !data/eval_heldout.json
 !data/question_embeddings.npz
+!data/updated.txt
 
 .venv/
 __pycache__/

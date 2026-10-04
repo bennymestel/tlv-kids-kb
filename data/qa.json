@@ -1923,6 +1923,20 @@
         "phone": null,
         "count": 1,
         "date": "2025-07-06"
+      },
+      {
+        "text": "Dizengoff 147 but I think its already closed , next to it there’s another one by max 20",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-02"
+      },
+      {
+        "text": "Tambor (hardware store)",
+        "name": "Tambor",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-02"
       }
     ]
   },
@@ -2351,6 +2365,20 @@
         "phone": "+972 53-208-8301",
         "count": 1,
         "date": "2025-10-28"
+      },
+      {
+        "text": "[CONTACT: Good Honest Plumber אסף, +972 54-465-3345]",
+        "name": "Good Honest Plumber אסף (Asaf)",
+        "phone": "+972 54-465-3345",
+        "count": 1,
+        "date": "2026-10-01"
+      },
+      {
+        "text": "[CONTACT: עדן גרובר, +972 55-252-8710] Only seeing this now but I want to shout out this plumber/handyman Eden. He was so amazing, he’s been to my apartment twice now and both times he was very easy to work with and did a great job to fix the issues. He also took initiative to fix other things that he noticed needed fixing and it was so helpful. And he prices really fairly and makes sure not to be a rip off which is great",
+        "name": "עדן גרובר (Eden Gruber)",
+        "phone": "+972 55-252-8710",
+        "count": 1,
+        "date": "2026-10-02"
       }
     ]
   },
@@ -3737,6 +3765,13 @@
         "phone": "+972 54-652-7447",
         "count": 1,
         "date": "2025-11-26"
+      },
+      {
+        "text": "Yishai Bitton +972 53‑333‑4367 Not sure prices but he was great",
+        "name": "Yishai Bitton",
+        "phone": "+972 53-333-4367",
+        "count": 1,
+        "date": "2026-09-29"
       }
     ]
   },
@@ -8815,6 +8850,20 @@
         "phone": null,
         "count": 1,
         "date": "2026-09-24"
+      },
+      {
+        "text": "Probably at one of the Chabad centers",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-28"
+      },
+      {
+        "text": "In past years, you could buy at the shuk (market) at the very beginning of it",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-28"
       }
     ]
   },
@@ -8895,6 +8944,118 @@
         "phone": null,
         "count": 1,
         "date": "2026-09-24"
+      }
+    ]
+  },
+  {
+    "question": "Which kosher dairy restaurants in Tel Aviv have a sukkah (temporary outdoor hut for Sukkot)?",
+    "category": "Food & Restaurants",
+    "answers": [
+      {
+        "text": "Pankina , la lasagna , Zota pizza",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "question": "Which kosher meat restaurants in Tel Aviv have a sukkah (temporary outdoor hut for Sukkot)?",
+    "category": "Food & Restaurants",
+    "answers": [
+      {
+        "text": "Simo does",
+        "name": "Simo",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-29"
+      },
+      {
+        "text": "Hoshen 196",
+        "name": "Hoshen 196",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-29"
+      },
+      {
+        "text": "Dvora I believe!",
+        "name": "Dvora",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "question": "Can anyone recommend nice kosher brunch spots near Florentin?",
+    "category": "Food & Restaurants",
+    "answers": [
+      {
+        "text": "Brasserie 18",
+        "name": "Brasserie 18",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-04"
+      },
+      {
+        "text": "Lorentz and mintz",
+        "name": "Lorentz and mintz",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-04"
+      }
+    ]
+  },
+  {
+    "question": "Can anyone recommend an adult swimming instructor in Tel Aviv?",
+    "category": "Kids & Education",
+    "answers": [
+      {
+        "text": "@Yael Magder !!",
+        "name": "Yael Magder",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "question": "Does anyone know a bus or coach rental company that offers reasonable prices?",
+    "category": "Transport",
+    "answers": [
+      {
+        "text": "[CONTACT: Daniel ריי הסעות (Ray Transportation), 050-599-0064] All israel drivers, ex army",
+        "name": "Daniel ריי הסעות (Ray Transportation)",
+        "phone": "050-599-0064",
+        "count": 1,
+        "date": "2026-10-01"
+      }
+    ]
+  },
+  {
+    "question": "Can someone recommend a driver or taxi service to take people from Ben Gurion Airport to Jerusalem?",
+    "category": "Transport",
+    "answers": [
+      {
+        "text": "[CONTACT: Taxi99, +972 3-686-8888] Hebrew speaker*",
+        "name": "Taxi99",
+        "phone": "+972 3-686-8888",
+        "count": 1,
+        "date": "2026-10-03"
+      }
+    ]
+  },
+  {
+    "question": "Where can I get sheets of wood cut to size in Tel Aviv?",
+    "category": "Home & Repairs",
+    "answers": [
+      {
+        "text": "צור עשה זאת בעצמך (Sheinkin St 16, תל אביב - יפו, 65231, TA, IL): https://www.zurdiy.com/",
+        "name": "צור עשה זאת בעצמך (Tzur DIY)",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-04"
       }
     ]
   }

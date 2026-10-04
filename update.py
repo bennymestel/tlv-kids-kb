@@ -2,16 +2,17 @@
 rebuilding or rewording anything that's already there.
 
 Usage: GEMINI_API_KEY=... python update.py data/export
-       GEMINI_API_KEY=... python update.py data/export --apply
+       python update.py --apply
 
-Without --apply, this only prints a preview and writes data/qa.new.json for you
-to look over. Run again with --apply once you're happy, to replace data/qa.json
-and move the "already processed" marker forward.
+The first command only writes a preview, data/qa.new.json, for you to look over.
+--apply then copies that exact preview over data/qa.json (no new Gemini calls)
+and moves the "already processed" marker forward.
 
 Existing questions are never reworded or removed. A new answer either raises an
 existing answer's count (same phone or same name) or is added underneath it;
 genuinely new questions are appended at the end.
 """
+import hashlib
 import json
 import os
 import re
@@ -30,7 +31,11 @@ from query_terms import TERMS
 QA_PATH = Path("data/qa.json")
 QA_NEW_PATH = Path("data/qa.new.json")
 LAST_PROCESSED_PATH = LOG_DIR / "last_processed.txt"
+# Committed (unlike the log folder) so the app can show how recent the data is.
+UPDATED_PATH = Path("data/updated.txt")
 NEW_TERMS_PATH = LOG_DIR / "new_terms.json"
+# What the preview was built from and how far it got, so --apply can check nothing moved.
+PENDING_PATH = LOG_DIR / "pending.json"
 
 # How many messages right before the cutoff to hand the model as context, so a
 # reply to an older question still makes sense. They're never turned into QAs.
@@ -39,6 +44,25 @@ CONTEXT_MESSAGES = 50
 
 def timestamp(m: dict) -> str:
     return f"{m['date']} {m['time']}"
+
+
+def file_hash(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def apply_preview():
+    if not PENDING_PATH.exists() or not QA_NEW_PATH.exists():
+        raise SystemExit("No preview to apply. Run: python update.py <export_folder>")
+    pending = json.loads(PENDING_PATH.read_text())
+    if (pending["qa_hash"] != file_hash(QA_PATH)
+            or pending["last_processed"] != LAST_PROCESSED_PATH.read_text().strip()):
+        raise SystemExit("data/qa.json or the marker changed since the preview. Run the preview again.")
+    QA_PATH.write_text(QA_NEW_PATH.read_text())
+    LAST_PROCESSED_PATH.write_text(pending["latest"])
+    UPDATED_PATH.write_text(pending["latest"].split()[0])
+    QA_NEW_PATH.unlink()
+    PENDING_PATH.unlink()
+    logger.info("Applied: data/qa.json updated, marker moved to %s.", pending["latest"])
 
 
 # --- Attach new Q&As to existing ones (Gemini pass) -----------------------
@@ -200,11 +224,12 @@ def suggest_terms(client, messages: list[dict]) -> list[TermSuggestion]:
 
 def main():
     args = sys.argv[1:]
-    apply = "--apply" in args
-    args = [a for a in args if a != "--apply"]
-    if len(args) != 1:
-        raise SystemExit("Usage: python update.py <export_folder> [--apply]")
     setup_logging()
+    if args == ["--apply"]:
+        apply_preview()
+        return
+    if len(args) != 1 or args[0].startswith("-"):
+        raise SystemExit("Usage: python update.py <export_folder>\n       python update.py --apply")
 
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
@@ -239,19 +264,21 @@ def main():
 
     logger.info("Extracting Q&A pairs from %d new message(s)", len(new_messages))
     qas = extract(client, new_messages, context_lines=context_lines)
-    if not qas:
-        logger.info("No recommendation Q&As found in the new messages.")
-        if apply:
-            LAST_PROCESSED_PATH.write_text(max(timestamp(m) for m in new_messages))
-        return
-
-    logger.info("Assigning categories")
-    categories = categorize(client, qas)
-
     existing = json.loads(QA_PATH.read_text())
-    logger.info("Attaching to existing questions")
-    merged = attach(client, qas, categories, existing)
+    if qas:
+        logger.info("Assigning categories")
+        categories = categorize(client, qas)
+        logger.info("Attaching to existing questions")
+        merged = attach(client, qas, categories, existing)
+    else:
+        logger.info("No recommendation Q&As found in the new messages.")
+        merged = existing
     QA_NEW_PATH.write_text(json.dumps(merged, ensure_ascii=False, indent=2))
+    PENDING_PATH.write_text(json.dumps({
+        "qa_hash": file_hash(QA_PATH),
+        "last_processed": last_processed,
+        "latest": max(timestamp(m) for m in new_messages),
+    }))
     logger.info("Wrote preview to %s (%d questions total, was %d)",
                 QA_NEW_PATH, len(merged), len(existing))
 
@@ -263,12 +290,7 @@ def main():
         for t in terms:
             logger.info("  %s -> %s", t.term, t.translation)
 
-    if apply:
-        QA_PATH.write_text(json.dumps(merged, ensure_ascii=False, indent=2))
-        LAST_PROCESSED_PATH.write_text(max(timestamp(m) for m in new_messages))
-        logger.info("Applied: data/qa.json updated, last-processed marker moved forward.")
-    else:
-        logger.info("Preview only. Re-run with --apply to update data/qa.json for real.")
+    logger.info("Preview only. Run `python update.py --apply` to save this exact preview.")
 
 
 if __name__ == "__main__":

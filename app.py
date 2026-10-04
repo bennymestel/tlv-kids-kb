@@ -1,4 +1,6 @@
 import re
+from datetime import date
+from pathlib import Path
 
 import streamlit as st
 
@@ -7,6 +9,10 @@ from sheet_log import log_feedback, log_rating, log_search
 
 st.set_page_config(page_title="TLV Kids KB", page_icon="assets/icon.jpg")
 st.title("TLV Kids Knowledge Base")
+updated = Path("data/updated.txt")
+if updated.exists():
+    d = date.fromisoformat(updated.read_text().strip())
+    st.caption(f"Includes messages up to {d.day} {d:%b %Y}")
 
 
 @st.cache_resource
