@@ -103,7 +103,7 @@ def load():
     return Index(collection, bm25, [set(trigrams(w)) for w in words]), qas
 
 
-def search(index: Index, qas, query: str, category: str | None = None, k: int = 10):
+def search(index: Index, qas, query: str, category: str | None = None, k: int = 5):
     allowed = [i for i, qa in enumerate(qas) if not category or qa["category"] == category]
 
     if not query:
