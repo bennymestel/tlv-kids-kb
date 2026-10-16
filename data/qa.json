@@ -1605,8 +1605,8 @@
         "text": "Eddie for sure",
         "name": "Eddie Mover",
         "phone": "+972 54-554-9909",
-        "count": 9,
-        "date": "2026-08-03"
+        "count": 10,
+        "date": "2026-10-05"
       },
       {
         "text": "[CONTACT: אריאל 217 הובלות (Ariel 217 Moving), +972 53-624-9043] Moved with them last year and relative to everything else was pretty cheap.",
@@ -1647,8 +1647,8 @@
         "text": "+972 53‑551‑5858 Yehudah. He’s awesome",
         "name": "Yehudah",
         "phone": "+972 53‑551‑5858",
-        "count": 1,
-        "date": "2025-11-19"
+        "count": 2,
+        "date": "2026-10-05"
       },
       {
         "text": "055-976-7733 אריאל (Ariel)",
@@ -1670,6 +1670,13 @@
         "phone": "+972 52-752-6353",
         "count": 1,
         "date": "2025-05-28"
+      },
+      {
+        "text": "Check out eddie webber on Gotcha! About: Reliable, perfectionist and professional and polite and honest https://gotchaconnectapp.com/worker/67",
+        "name": "Eddie Webber",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-07"
       }
     ]
   },
@@ -2325,6 +2332,13 @@
     "category": "Home & Repairs",
     "answers": [
       {
+        "text": "[CONTACT: Good Honest Plumber אסף, +972 54-465-3345]",
+        "name": "Good Honest Plumber אסף (Asaf)",
+        "phone": "+972 54-465-3345",
+        "count": 2,
+        "date": "2026-10-06"
+      },
+      {
         "text": "[CONTACT: פלי Plumber, +972 53-334-5650]",
         "name": "פלי Plumber",
         "phone": "+972 53-334-5650",
@@ -2365,13 +2379,6 @@
         "phone": "+972 53-208-8301",
         "count": 1,
         "date": "2025-10-28"
-      },
-      {
-        "text": "[CONTACT: Good Honest Plumber אסף, +972 54-465-3345]",
-        "name": "Good Honest Plumber אסף (Asaf)",
-        "phone": "+972 54-465-3345",
-        "count": 1,
-        "date": "2026-10-01"
       },
       {
         "text": "[CONTACT: עדן גרובר, +972 55-252-8710] Only seeing this now but I want to shout out this plumber/handyman Eden. He was so amazing, he’s been to my apartment twice now and both times he was very easy to work with and did a great job to fix the issues. He also took initiative to fix other things that he noticed needed fixing and it was so helpful. And he prices really fairly and makes sure not to be a rip off which is great",
@@ -2876,6 +2883,13 @@
         "phone": "+972 53-594-1478",
         "count": 1,
         "date": "2026-09-01"
+      },
+      {
+        "text": "Try getcleaner app. It works best for me when I’m in a last minute bind and can’t find anyone",
+        "name": "getcleaner",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-08"
       }
     ]
   },
@@ -3155,6 +3169,20 @@
         "phone": null,
         "count": 1,
         "date": "2026-08-16"
+      },
+      {
+        "text": "Lak Perfect (shenkin 15) - they are the best",
+        "name": "Lak Perfect",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-12"
+      },
+      {
+        "text": "@~Nava Jakobovits best nail tech in tlv!!!",
+        "name": "Nava Jakobovits",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-12"
       }
     ]
   },
@@ -4210,6 +4238,20 @@
         "phone": "+972 53-865-8762",
         "count": 1,
         "date": "2026-05-04"
+      },
+      {
+        "text": "Insta: @ahuva.bitan 🎀",
+        "name": "Ahuva Bitan",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-13"
+      },
+      {
+        "text": "100memet on Ben yehuda 100 shek for a cut",
+        "name": "100memet",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-13"
       }
     ]
   },
@@ -8097,8 +8139,8 @@
         "text": "Dr James Watson",
         "name": "Dr James Watson",
         "phone": null,
-        "count": 1,
-        "date": "2025-08-14"
+        "count": 2,
+        "date": "2026-10-08"
       },
       {
         "text": "Noa Burg is in Yafo but is worth the travel!!!!",
@@ -8106,6 +8148,20 @@
         "phone": null,
         "count": 1,
         "date": "2025-08-17"
+      },
+      {
+        "text": "Also Dr. Gavriel Blum!",
+        "name": "Dr. Gavriel Blum",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-08"
+      },
+      {
+        "text": "Dr. Gabriella Sampson",
+        "name": "Dr. Gabriella Sampson",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-08"
       }
     ]
   },
@@ -9056,6 +9112,237 @@
         "phone": null,
         "count": 1,
         "date": "2026-10-04"
+      }
+    ]
+  },
+  {
+    "question": "Can anyone recommend an accountant for opening an Osek Murshe (licensed business)?",
+    "category": "Bureaucracy & Services",
+    "answers": [
+      {
+        "text": "[CONTACT: Boruch Levenson, +972 52-790-3687]",
+        "name": "Boruch Levenson",
+        "phone": "+972 52-790-3687",
+        "count": 1,
+        "date": "2026-10-04"
+      }
+    ]
+  },
+  {
+    "question": "Can anyone recommend an independent nail technician?",
+    "category": "Bureaucracy & Services",
+    "answers": [
+      {
+        "text": "[CONTACT: טלי לק גל, +972 58-473-9353]",
+        "name": "טלי לק גל (Tali Gel Polish)",
+        "phone": "+972 58-473-9353",
+        "count": 1,
+        "date": "2026-10-07"
+      },
+      {
+        "text": "https://www.instagram.com/sweet.senses.studio",
+        "name": "Sweet Senses Studio",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-07"
+      },
+      {
+        "text": "https://www.instagram.com/nailsbygabriellasegal?stkn=MWloc2VoN3lxN3IwNg==",
+        "name": "Gabriella Segal",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-07"
+      },
+      {
+        "text": "https://www.instagram.com/sarahalezra_beauty?stkn=MTJ0bXJ5dWd0YXlvbg== The best in TA!",
+        "name": "Sarah Alezra Beauty",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "question": "Can anyone recommend a financial advisor who specializes in American olim (immigrants to Israel) dealing with Keren Hishtalmut (tax-advantaged advanced training funds), pensions, and tax complications?",
+    "category": "Bureaucracy & Services",
+    "answers": [
+      {
+        "text": "[CONTACT: Nadav Ellinson, +972 52-811-8925]",
+        "name": "Nadav Ellinson",
+        "phone": "+972 52-811-8925",
+        "count": 1,
+        "date": "2026-10-13"
+      },
+      {
+        "text": "Nadav and Aharon from Blue and White finance are the best. They have lots of free guides on their website, different calculators, and paid courses with coaching.",
+        "name": "Blue and White Finance",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-13"
+      }
+    ]
+  },
+  {
+    "question": "Does anyone know a jeweler who can fix broken gold necklaces?",
+    "category": "Bureaucracy & Services",
+    "answers": [
+      {
+        "text": "Bracelet Fixer (+972 54-333-2481), located on Ben Yehuda/Mendeli.",
+        "name": "Bracelet Fixer",
+        "phone": "+972 54-333-2481",
+        "count": 1,
+        "date": "2026-10-15"
+      }
+    ]
+  },
+  {
+    "question": "Does anyone have a contact for someone who repairs washing machines in Tel Aviv?",
+    "category": "Home & Repairs",
+    "answers": [
+      {
+        "text": "Use midrag",
+        "name": "Midrag",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-11"
+      },
+      {
+        "text": "[CONTACT: גיא טכנאי מכונת כביסה, +972 54-300-7988]",
+        "name": "גיא טכנאי מכונת כביסה (Guy Washing Machine Technician)",
+        "phone": "+972 54-300-7988",
+        "count": 1,
+        "date": "2026-10-11"
+      }
+    ]
+  },
+  {
+    "question": "Where can I find WD-40 or a spray to remove car stickers?",
+    "category": "Shopping",
+    "answers": [
+      {
+        "text": "I’ve seen at Homecenter but I’m sure you can find in any tambour (hardware store)",
+        "name": "Homecenter",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-06"
+      },
+      {
+        "text": "Max stock sometimes has as well",
+        "name": "Max stock",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-06"
+      }
+    ]
+  },
+  {
+    "question": "Where can I buy mezuzahs in Tel Aviv that is open on a Friday?",
+    "category": "Shopping",
+    "answers": [
+      {
+        "text": "Nahalat binyamin art fair",
+        "name": "Nahalat Binyamin Art Fair",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-09"
+      },
+      {
+        "text": "מזוזה סנטר (Mezuza Center)",
+        "name": "מזוזה סנטר (Mezuza Center)",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "question": "Where can I buy inexpensive basic kitchenware, such as glass containers, in Tel Aviv?",
+    "category": "Shopping",
+    "answers": [
+      {
+        "text": "Max stock",
+        "name": "Max stock",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-12"
+      }
+    ]
+  },
+  {
+    "question": "Does anyone have a recommendation for a dentist to do a thorough teeth cleaning?",
+    "category": "Health",
+    "answers": [
+      {
+        "text": "Michael Miller! He’s amazing",
+        "name": "Michael Miller",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-06"
+      }
+    ]
+  },
+  {
+    "question": "Can anyone recommend a kosher restaurant for steak in Tel Aviv?",
+    "category": "Food & Restaurants",
+    "answers": [
+      {
+        "text": "Hi Zack I would recommend Meatos",
+        "name": "Meatos",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-07"
+      }
+    ]
+  },
+  {
+    "question": "What is the best kosher ice cream in Ra'anana?",
+    "category": "Food & Restaurants",
+    "answers": [
+      {
+        "text": "Golds",
+        "name": "Golds",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-10"
+      }
+    ]
+  },
+  {
+    "question": "Does anyone have recommendations for good coffee beans?",
+    "category": "Food & Restaurants",
+    "answers": [
+      {
+        "text": "I love Mae coffee just pricey",
+        "name": "Mae Cafe",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-12"
+      }
+    ]
+  },
+  {
+    "question": "Does anyone know a good butcher in Tel Aviv?",
+    "category": "Food & Restaurants",
+    "answers": [
+      {
+        "text": "קצביית בצלאל, טשרניחובסקי 8 (Bezalel Butchery, Tchernikhovski 8)",
+        "name": "קצביית בצלאל (Bezalel Butchery)",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "question": "Where can I donate books?",
+    "category": "Other",
+    "answers": [
+      {
+        "text": "There's a nice book swap group you can post them in: https://chat.whatsapp.com/DREV89XTbGmGuGlX4OdP8T",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-15"
       }
     ]
   }
