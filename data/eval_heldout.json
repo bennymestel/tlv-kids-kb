@@ -31,7 +31,6 @@
     "group": "transliteration",
     "category": null,
     "expected": [
-      "Can anyone recommend a good English-speaking Maccabi doctor in Tel Aviv?",
       "Can anyone recommend an English-speaking Maccabi family doctor?",
       "Can anyone recommend an English-speaking female doctor in Tel Aviv through Maccabi?",
       "Can anyone recommend a good English-speaking family doctor in Tel Aviv?"
@@ -95,13 +94,11 @@
       "Can anyone recommend a technician to install an air conditioner?",
       "Can anyone recommend an AC technician for an urgent repair?",
       "Can anyone recommend a good handyman in Tel Aviv?",
-      "Can anyone recommend an English-speaking plumber in Tel Aviv?",
+      "Can anyone recommend a reliable plumber in Tel Aviv?",
       "Can anyone recommend a technician who can fix a leaking air conditioner?",
       "Can anyone recommend an oven repair technician?",
-      "Can anyone recommend a reliable plumber in Tel Aviv?",
       "Can anyone recommend a good and trustworthy electrician?",
       "Can anyone recommend an exterminator in Tel Aviv?",
-      "Can anyone recommend someone who can repair an air conditioner tonight?",
       "Can anyone recommend someone to clean air conditioning units?",
       "Can anyone recommend a washing machine repair technician?",
       "Does anyone have a contact for someone who can clean and fix an air conditioner?"
@@ -122,7 +119,7 @@
     "category": null,
     "expected": [
       "Can anyone recommend a fun, experiential restaurant with good music for a birthday celebration in Tel Aviv?",
-      "Can anyone recommend a high-end kosher meat restaurant with a sukkah (temporary outdoor booth for Sukkot) and great atmosphere for a birthday celebration in Tel Aviv or Jerusalem?"
+      "Which kosher restaurants have a sukkah (temporary outdoor hut for Sukkot)?"
     ]
   },
   {
@@ -160,8 +157,6 @@
       "Can anyone recommend a good Israeli CPA who specializes in international taxes?",
       "Can anyone recommend an accountant?",
       "Can anyone recommend a great accountant for new Olim (immigrants to Israel) from the UK?",
-      "Can anyone recommend an American accountant who works with Israelis?",
-      "Can anyone recommend an English-speaking accountant?",
       "Can anyone recommend an accountant who can register an osek ptor (exempt small business) for me?",
       "Can anyone recommend a tax expert who understands company options for US citizens living in Israel?"
     ]
@@ -263,8 +258,7 @@
     "group": "paraphrase",
     "category": null,
     "expected": [
-      "Can anyone recommend a good dog groomer in Tel Aviv?",
-      "Can anyone recommend dog groomers in North Tel Aviv?"
+      "Can anyone recommend a good dog groomer in Tel Aviv?"
     ]
   },
   {
@@ -359,8 +353,6 @@
       "Can anyone recommend a good Israeli CPA who specializes in international taxes?",
       "Can anyone recommend an accountant?",
       "Can anyone recommend a great accountant for new Olim (immigrants to Israel) from the UK?",
-      "Can anyone recommend an American accountant who works with Israelis?",
-      "Can anyone recommend an English-speaking accountant?",
       "Can anyone recommend an accountant who can register an osek ptor (exempt small business) for me?",
       "Can anyone recommend a tax expert who understands company options for US citizens living in Israel?"
     ]
@@ -370,9 +362,8 @@
     "group": "category",
     "category": "Food & Restaurants",
     "expected": [
-      "Where can I buy bagels in Tel Aviv, aside from Schmearz and Good Bagels?",
-      "Where is the best place to get a Caesar salad in Tel Aviv?",
-      "Where is the best place in Tel Aviv to buy a large quantity of plain whole bagels?"
+      "Where can I buy bagels in Tel Aviv?",
+      "Where is the best place to get a Caesar salad in Tel Aviv?"
     ]
   },
   {
@@ -382,7 +373,6 @@
     "expected": [
       "Can anyone recommend a good massage therapist in Tel Aviv?",
       "Can anyone recommend a massage therapist?",
-      "Can anyone recommend a massage therapist for injury recovery and leg pain?",
       "Can anyone recommend a place for a scalp or head massage?",
       "What are the best Thai massage places in Tel Aviv?"
     ]

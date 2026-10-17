@@ -53,7 +53,7 @@
     ]
   },
   {
-    "question": "Where in Tel Aviv can I buy a siddur (prayer book) last minute?",
+    "question": "Where in Tel Aviv can I buy a siddur (prayer book)?",
     "category": "Shopping",
     "answers": [
       {
@@ -62,33 +62,13 @@
         "phone": null,
         "count": 1,
         "date": "2025-05-28"
-      }
-    ]
-  },
-  {
-    "question": "Where can I buy a mezuzah with a scroll in Tel Aviv?",
-    "category": "Shopping",
-    "answers": [
-      {
-        "text": "[CONTACT: +972 58-593-4770, +972 58-593-4770]",
-        "name": null,
-        "phone": "+972 58-593-4770",
-        "count": 1,
-        "date": "2025-07-06"
       },
       {
-        "text": "COTC sells",
-        "name": "COTC",
-        "phone": null,
-        "count": 1,
-        "date": "2025-07-06"
-      },
-      {
-        "text": "Hey, if youre referring to the inside of the mezuzah (like the parchment with the shema, etc.) chabad would be helpful. For the cases chabad would also be helpful for those basic plastic cases, but judaica shops like tifarta and Sinai books would likely have as well",
+        "text": "TLV: Tifarta or Sinai Books\nJLM: Manny's, Pomeranz, and likely many other places there",
         "name": null,
         "phone": null,
         "count": 1,
-        "date": "2025-05-29"
+        "date": "2026-02-23"
       }
     ]
   },
@@ -122,6 +102,13 @@
         "phone": null,
         "count": 1,
         "date": "2025-06-03"
+      },
+      {
+        "text": "Max stock",
+        "name": "Max stock",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-12"
       }
     ]
   },
@@ -336,6 +323,13 @@
     "category": "Shopping",
     "answers": [
       {
+        "text": "שניאור סלפושניק חבד צפון תל אביב יהושוע בן נון 9, +972 54-922-1167",
+        "name": "שניאור סלפושניק חבד צפון תל אביב",
+        "phone": "+972 54-922-1167",
+        "count": 3,
+        "date": "2025-08-19"
+      },
+      {
         "text": "The Chabad store on king George also sells",
         "name": "Chabad",
         "phone": null,
@@ -350,13 +344,6 @@
         "date": "2026-07-24"
       },
       {
-        "text": "שניאור סלפושניק חבד צפון תל אביב יהושוע בן נון 9, +972 54-922-1167",
-        "name": "שניאור סלפושניק חבד צפון תל אביב",
-        "phone": "+972 54-922-1167",
-        "count": 2,
-        "date": "2025-07-17"
-      },
-      {
         "text": "I bought via Chabad on the Coast",
         "name": "Chabad on the Coast",
         "phone": null,
@@ -369,6 +356,48 @@
         "phone": "+972 54-594-5433",
         "count": 1,
         "date": "2025-10-06"
+      },
+      {
+        "text": "[CONTACT: +972 58-593-4770, +972 58-593-4770]",
+        "name": null,
+        "phone": "+972 58-593-4770",
+        "count": 1,
+        "date": "2025-07-06"
+      },
+      {
+        "text": "COTC sells",
+        "name": "COTC",
+        "phone": null,
+        "count": 1,
+        "date": "2025-07-06"
+      },
+      {
+        "text": "Hey, if youre referring to the inside of the mezuzah (like the parchment with the shema, etc.) chabad would be helpful. For the cases chabad would also be helpful for those basic plastic cases, but judaica shops like tifarta and Sinai books would likely have as well",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2025-05-29"
+      },
+      {
+        "text": "Farag Judaica - Dizengoff 139",
+        "name": "Farag Judaica",
+        "phone": null,
+        "count": 1,
+        "date": "2025-08-19"
+      },
+      {
+        "text": "Nahalat binyamin art fair",
+        "name": "Nahalat Binyamin Art Fair",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-09"
+      },
+      {
+        "text": "מזוזה סנטר (Mezuza Center)",
+        "name": "מזוזה סנטר (Mezuza Center)",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-09"
       }
     ]
   },
@@ -426,19 +455,6 @@
     ]
   },
   {
-    "question": "Does anyone know a good shop in Tel Aviv to buy a talis (prayer shawl) for a Bar Mitzvah?",
-    "category": "Shopping",
-    "answers": [
-      {
-        "text": "https://maps.app.goo.gl/nmnDzmETeBKLJB2q7?g_st=ipc this is a judaica store. they might have, worth calling",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2025-08-17"
-      }
-    ]
-  },
-  {
     "question": "Where in Tel Aviv can I rent a tuxedo?",
     "category": "Shopping",
     "answers": [
@@ -458,26 +474,6 @@
       {
         "text": "https://www.carpetim.co.il/",
         "name": "Carpetim",
-        "phone": null,
-        "count": 1,
-        "date": "2025-08-19"
-      }
-    ]
-  },
-  {
-    "question": "Where can I buy mezuzot nearby in Tel Aviv?",
-    "category": "Shopping",
-    "answers": [
-      {
-        "text": "I got from Chabad [CONTACT: בית חב\"ד צפון הישן ת\"א Chabad Of The Old North Tel Aviv, +972 54-922-1167]",
-        "name": "Chabad Of The Old North Tel Aviv",
-        "phone": "+972 54-922-1167",
-        "count": 1,
-        "date": "2025-08-19"
-      },
-      {
-        "text": "Farag Judaica - Dizengoff 139",
-        "name": "Farag Judaica",
         "phone": null,
         "count": 1,
         "date": "2025-08-19"
@@ -524,26 +520,6 @@
     ]
   },
   {
-    "question": "Where in Tel Aviv can I buy a 'bride-to-be' sash?",
-    "category": "Shopping",
-    "answers": [
-      {
-        "text": "Max Stock often has that type of thing",
-        "name": "Max Stock",
-        "phone": null,
-        "count": 1,
-        "date": "2025-09-11"
-      },
-      {
-        "text": "Hula or stores in shuk levinsky (Levinsky market)",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2025-09-11"
-      }
-    ]
-  },
-  {
     "question": "Can anyone recommend a good place to buy kitchen table chairs?",
     "category": "Shopping",
     "answers": [
@@ -564,22 +540,16 @@
     ]
   },
   {
-    "question": "Where is the closest place in Tel Aviv to buy Koren machzors (holiday prayer books)?",
+    "question": "Where in Tel Aviv can I buy a machzor (holiday prayer book)?",
     "category": "Shopping",
     "answers": [
       {
         "text": "I’d call Sinai Bookstore on Allenby",
         "name": "Sinai Bookstore",
         "phone": null,
-        "count": 3,
-        "date": "2025-09-17"
-      }
-    ]
-  },
-  {
-    "question": "Where in Tel Aviv can I buy a machzor (holiday prayer book)?",
-    "category": "Shopping",
-    "answers": [
+        "count": 4,
+        "date": "2026-09-07"
+      },
       {
         "text": "Rambam 24",
         "name": null,
@@ -670,7 +640,7 @@
         "text": "Sometimes max stock sells that type of decorations",
         "name": "Max Stock",
         "phone": null,
-        "count": 1,
+        "count": 2,
         "date": "2025-11-02"
       },
       {
@@ -679,6 +649,13 @@
         "phone": null,
         "count": 1,
         "date": "2025-11-02"
+      },
+      {
+        "text": "Hula or stores in shuk levinsky (Levinsky market)",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2025-09-11"
       }
     ]
   },
@@ -757,6 +734,13 @@
         "phone": "03-682-7430",
         "count": 1,
         "date": "2025-12-03"
+      },
+      {
+        "text": "https://maps.app.goo.gl/nmnDzmETeBKLJB2q7?g_st=ipc this is a judaica store. they might have, worth calling",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2025-08-17"
       }
     ]
   },
@@ -959,19 +943,6 @@
     ]
   },
   {
-    "question": "Where can I buy or order a compact Koren siddur (prayer book) with tabs in Jerusalem or Tel Aviv?",
-    "category": "Shopping",
-    "answers": [
-      {
-        "text": "TLV: Tifarta or Sinai Books\nJLM: Manny's, Pomeranz, and likely many other places there",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2026-02-23"
-      }
-    ]
-  },
-  {
     "question": "Where can I buy AirTag batteries in Tel Aviv?",
     "category": "Shopping",
     "answers": [
@@ -1085,8 +1056,8 @@
         "text": "I buy from Adashot on dizengoff",
         "name": "Adashot",
         "phone": null,
-        "count": 1,
-        "date": "2026-05-10"
+        "count": 2,
+        "date": "2026-06-04"
       }
     ]
   },
@@ -1113,19 +1084,6 @@
         "phone": null,
         "count": 1,
         "date": "2026-05-26"
-      }
-    ]
-  },
-  {
-    "question": "Where can I buy monthly contact lenses in Tel Aviv?",
-    "category": "Shopping",
-    "answers": [
-      {
-        "text": "Adashot, its on dizengoff 332",
-        "name": "Adashot",
-        "phone": null,
-        "count": 1,
-        "date": "2026-06-04"
       }
     ]
   },
@@ -1316,19 +1274,6 @@
         "phone": null,
         "count": 1,
         "date": "2026-09-03"
-      }
-    ]
-  },
-  {
-    "question": "Where in Tel Aviv can I buy sifrei kodesh (Jewish holy books) and sets of machzorim (holiday prayer books) for the chagim (holidays)?",
-    "category": "Shopping",
-    "answers": [
-      {
-        "text": "I would check Sinai Books",
-        "name": "Sinai Books",
-        "phone": null,
-        "count": 1,
-        "date": "2026-09-07"
       }
     ]
   },
@@ -1729,33 +1674,6 @@
     ]
   },
   {
-    "question": "Can anyone recommend a mover to move a couch in Tel Aviv?",
-    "category": "Home & Repairs",
-    "answers": [
-      {
-        "text": "Idan Mover, +972 52-654-0435",
-        "name": "Idan Mover",
-        "phone": "+972 52-654-0435",
-        "count": 3,
-        "date": "2026-02-01"
-      },
-      {
-        "text": "ניסי Mover: +972 52-752-6353 Super nice guy",
-        "name": "ניסי Mover",
-        "phone": "+972 52-752-6353",
-        "count": 1,
-        "date": "2025-08-11"
-      },
-      {
-        "text": "[CONTACT: Eddie Mover Tlv, +972 54-554-9909] Recommended for all",
-        "name": "Eddie Mover Tlv",
-        "phone": "+972 54-554-9909",
-        "count": 1,
-        "date": "2025-06-11"
-      }
-    ]
-  },
-  {
     "question": "Does anyone know an air conditioning repair technician in Tel Aviv?",
     "category": "Home & Repairs",
     "answers": [
@@ -2148,19 +2066,6 @@
     ]
   },
   {
-    "question": "Can anyone recommend someone to disassemble a closet?",
-    "category": "Home & Repairs",
-    "answers": [
-      {
-        "text": "@~Josh Lissek",
-        "name": "Josh Lissek",
-        "phone": null,
-        "count": 1,
-        "date": "2025-08-06"
-      }
-    ]
-  },
-  {
     "question": "Does anyone know someone reliable and affordable to fix a shower door?",
     "category": "Home & Repairs",
     "answers": [
@@ -2236,19 +2141,6 @@
         "phone": "+972 50-902-1122",
         "count": 1,
         "date": "2025-09-28"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend someone who can repair an air conditioner tonight?",
-    "category": "Home & Repairs",
-    "answers": [
-      {
-        "text": "[CONTACT: Yosef Perlow, +972 53-967-7807]",
-        "name": "Yosef Perlow",
-        "phone": "+972 53-967-7807",
-        "count": 1,
-        "date": "2025-10-04"
       }
     ]
   },
@@ -2339,18 +2231,18 @@
         "date": "2026-10-06"
       },
       {
+        "text": "[CONTACT: Josh Handyman, +61 421 173 003]",
+        "name": "Josh Handyman",
+        "phone": "+61 421 173 003",
+        "count": 2,
+        "date": "2026-09-14"
+      },
+      {
         "text": "[CONTACT: פלי Plumber, +972 53-334-5650]",
         "name": "פלי Plumber",
         "phone": "+972 53-334-5650",
         "count": 1,
         "date": "2026-08-30"
-      },
-      {
-        "text": "[CONTACT: Josh Handyman, +61 421 173 003]",
-        "name": "Josh Handyman",
-        "phone": "+61 421 173 003",
-        "count": 1,
-        "date": "2026-08-25"
       },
       {
         "text": "The best!! Nitzan: +972 5431228263",
@@ -2610,11 +2502,32 @@
     "category": "Home & Repairs",
     "answers": [
       {
+        "text": "Idan Mover, +972 52-654-0435",
+        "name": "Idan Mover",
+        "phone": "+972 52-654-0435",
+        "count": 3,
+        "date": "2026-02-01"
+      },
+      {
         "text": "[CONTACT: הובלות והשכרה צוות קלין (Clean Team Moving and Rental), +972 53-422-0837]",
         "name": "הובלות והשכרה צוות קלין (Clean Team Moving and Rental)",
         "phone": "+972 53-422-0837",
         "count": 1,
         "date": "2026-07-07"
+      },
+      {
+        "text": "ניסי Mover: +972 52-752-6353 Super nice guy",
+        "name": "ניסי Mover",
+        "phone": "+972 52-752-6353",
+        "count": 1,
+        "date": "2025-08-11"
+      },
+      {
+        "text": "[CONTACT: Eddie Mover Tlv, +972 54-554-9909] Recommended for all",
+        "name": "Eddie Mover Tlv",
+        "phone": "+972 54-554-9909",
+        "count": 1,
+        "date": "2025-06-11"
       }
     ]
   },
@@ -2679,19 +2592,6 @@
     ]
   },
   {
-    "question": "Can anyone recommend an exterminator to spray an apartment for cockroaches (g'ukim) before moving in?",
-    "category": "Home & Repairs",
-    "answers": [
-      {
-        "text": "אילן ריסוס, +972 53-228-8245",
-        "name": "אילן ריסוס",
-        "phone": "+972 53-228-8245",
-        "count": 1,
-        "date": "2026-07-15"
-      }
-    ]
-  },
-  {
     "question": "Can anyone recommend someone to repair a closet and build a shoe rack?",
     "category": "Home & Repairs",
     "answers": [
@@ -2740,6 +2640,13 @@
         "phone": "+61 421 173 003",
         "count": 1,
         "date": "2026-07-27"
+      },
+      {
+        "text": "@~Josh Lissek",
+        "name": "Josh Lissek",
+        "phone": null,
+        "count": 1,
+        "date": "2025-08-06"
       }
     ]
   },
@@ -2809,19 +2716,6 @@
     ]
   },
   {
-    "question": "Can anyone recommend a good exterminator to seal an apartment against cockroaches?",
-    "category": "Home & Repairs",
-    "answers": [
-      {
-        "text": "[CONTACT: טובי מדביר (Tobi Exterminator), +972 50-833-3388]",
-        "name": "טובי מדביר (Tobi Exterminator)",
-        "phone": "+972 50-833-3388",
-        "count": 1,
-        "date": "2026-08-17"
-      }
-    ]
-  },
-  {
     "question": "Can anyone recommend a qualified gas technician to connect appliances?",
     "category": "Home & Repairs",
     "answers": [
@@ -2844,6 +2738,13 @@
         "phone": "+972 54-393-4161",
         "count": 1,
         "date": "2026-08-20"
+      },
+      {
+        "text": "[CONTACT: Yosef Perlow, +972 53-967-7807]",
+        "name": "Yosef Perlow",
+        "phone": "+972 53-967-7807",
+        "count": 1,
+        "date": "2025-10-04"
       }
     ]
   },
@@ -2903,6 +2804,20 @@
         "phone": "+972 52-346-0404",
         "count": 1,
         "date": "2026-09-01"
+      },
+      {
+        "text": "אילן ריסוס, +972 53-228-8245",
+        "name": "אילן ריסוס",
+        "phone": "+972 53-228-8245",
+        "count": 1,
+        "date": "2026-07-15"
+      },
+      {
+        "text": "[CONTACT: טובי מדביר (Tobi Exterminator), +972 50-833-3388]",
+        "name": "טובי מדביר (Tobi Exterminator)",
+        "phone": "+972 50-833-3388",
+        "count": 1,
+        "date": "2026-08-17"
       }
     ]
   },
@@ -2916,19 +2831,6 @@
         "phone": "+972 52-408-1808",
         "count": 1,
         "date": "2026-09-10"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend an English-speaking plumber in Tel Aviv?",
-    "category": "Home & Repairs",
-    "answers": [
-      {
-        "text": "[CONTACT: Josh Handyman, +61 421 173 003]",
-        "name": "Josh Handyman",
-        "phone": "+61 421 173 003",
-        "count": 1,
-        "date": "2026-09-14"
       }
     ]
   },
@@ -2973,8 +2875,15 @@
         "text": "[CONTACT: Jana Tailor Tlv, +972 52-528-4923]",
         "name": "Jana Tailor Tlv",
         "phone": "+972 52-528-4923",
-        "count": 4,
-        "date": "2026-08-22"
+        "count": 8,
+        "date": "2026-08-23"
+      },
+      {
+        "text": "Yes ‘fancy’ at gan ha’ir ibn gvirol",
+        "name": "Fancy",
+        "phone": null,
+        "count": 2,
+        "date": "2025-10-22"
       },
       {
         "text": "[CONTACT: Miko and Stitch, +972 55-995-9873]\nShe’s your go to for fancy items though, not sure if you wanna spend for just a casual item",
@@ -3010,6 +2919,34 @@
         "phone": null,
         "count": 1,
         "date": "2026-05-07"
+      },
+      {
+        "text": "Located at 223 dizengoff",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-06-03"
+      },
+      {
+        "text": "https://maps.app.goo.gl/jDJEQG6nEWo2E3Fo8",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-08-20"
+      },
+      {
+        "text": "https://share.google/MXzxacLnC2h9A4zeP",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-05-28"
+      },
+      {
+        "text": "חייט בר כוכבא (Bar Kochba Tailor), +972 50-293-9367",
+        "name": "חייט בר כוכבא (Bar Kochba Tailor)",
+        "phone": "+972 50-293-9367",
+        "count": 1,
+        "date": "2026-01-13"
       }
     ]
   },
@@ -3089,6 +3026,13 @@
         "phone": "+972 53-339-4882",
         "count": 1,
         "date": "2025-06-10"
+      },
+      {
+        "text": "The cute couple  on bogroshov accross from bar kochva (don’t know what they are called)",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-08-30"
       }
     ]
   },
@@ -3102,6 +3046,13 @@
         "phone": "+972 50-266-7848",
         "count": 1,
         "date": "2025-06-19"
+      },
+      {
+        "text": "Simona, +972 54-481-8000",
+        "name": "Simona",
+        "phone": "+972 54-481-8000",
+        "count": 1,
+        "date": "2025-09-06"
       }
     ]
   },
@@ -3295,8 +3246,8 @@
         "text": "Yossi: +972 54-231-3624",
         "name": "Yossi",
         "phone": "+972 54-231-3624",
-        "count": 1,
-        "date": "2025-08-06"
+        "count": 2,
+        "date": "2025-10-26"
       }
     ]
   },
@@ -3398,6 +3349,13 @@
     "category": "Bureaucracy & Services",
     "answers": [
       {
+        "text": "Boruch Levenson, +972 52-790-3687 - he's great",
+        "name": "Boruch Levenson",
+        "phone": "+972 52-790-3687",
+        "count": 2,
+        "date": "2026-05-03"
+      },
+      {
         "text": "Ariel Mensch @ Raftel is top notch",
         "name": "Ariel Mensch @ Raftel",
         "phone": null,
@@ -3412,24 +3370,11 @@
         "date": "2026-05-20"
       },
       {
-        "text": "Boruch Levenson, +972 52-790-3687 - he's great",
-        "name": "Boruch Levenson",
-        "phone": "+972 52-790-3687",
+        "text": "Eran Accountant, +972 54-572-5444",
+        "name": "Eran Accountant",
+        "phone": "+972 54-572-5444",
         "count": 1,
-        "date": "2025-09-04"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend a real estate agent in Tel Aviv specifically for rentals?",
-    "category": "Bureaucracy & Services",
-    "answers": [
-      {
-        "text": "Simona, +972 54-481-8000",
-        "name": "Simona",
-        "phone": "+972 54-481-8000",
-        "count": 1,
-        "date": "2025-09-06"
+        "date": "2026-08-10"
       }
     ]
   },
@@ -3456,40 +3401,6 @@
         "phone": null,
         "count": 1,
         "date": "2025-09-09"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend a tailor in the Old North of Tel Aviv?",
-    "category": "Bureaucracy & Services",
-    "answers": [
-      {
-        "text": "Jana Tailor Tlv: +972 52-528-4923. She is literally the best.",
-        "name": "Jana Tailor Tlv",
-        "phone": "+972 52-528-4923",
-        "count": 4,
-        "date": "2026-08-23"
-      },
-      {
-        "text": "Yes ‘fancy’ at gan ha’ir ibn gvirol",
-        "name": "Fancy",
-        "phone": null,
-        "count": 2,
-        "date": "2025-10-22"
-      },
-      {
-        "text": "Located at 223 dizengoff",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2026-06-03"
-      },
-      {
-        "text": "https://maps.app.goo.gl/jDJEQG6nEWo2E3Fo8",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2026-08-20"
       }
     ]
   },
@@ -3595,19 +3506,6 @@
         "phone": null,
         "count": 1,
         "date": "2025-10-22"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend a good barber in Tel Aviv who gives non-Israeli style haircuts?",
-    "category": "Bureaucracy & Services",
-    "answers": [
-      {
-        "text": "Yossi Haimov Barber: +972 54-231-3624. The best!",
-        "name": "Yossi Haimov Barber",
-        "phone": "+972 54-231-3624",
-        "count": 1,
-        "date": "2025-10-26"
       }
     ]
   },
@@ -3781,6 +3679,13 @@
     "category": "Bureaucracy & Services",
     "answers": [
       {
+        "text": "Yishai Bitton +972 53‑333‑4367 Not sure prices but he was great",
+        "name": "Yishai Bitton",
+        "phone": "+972 53-333-4367",
+        "count": 2,
+        "date": "2026-09-29"
+      },
+      {
         "text": "[CONTACT: Laliko Natshivili, +972 53-471-3023]",
         "name": "Laliko Natshivili",
         "phone": "+972 53-471-3023",
@@ -3795,11 +3700,11 @@
         "date": "2025-11-26"
       },
       {
-        "text": "Yishai Bitton +972 53‑333‑4367 Not sure prices but he was great",
-        "name": "Yishai Bitton",
-        "phone": "+972 53-333-4367",
+        "text": "[CONTACT: Benny, +972 54-332-2638]",
+        "name": "Benny",
+        "phone": "+972 54-332-2638",
         "count": 1,
-        "date": "2026-09-29"
+        "date": "2026-08-01"
       }
     ]
   },
@@ -3833,19 +3738,6 @@
         "phone": "+972 54-565-6695",
         "count": 1,
         "date": "2025-12-07"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend an American accountant who works with Israelis?",
-    "category": "Bureaucracy & Services",
-    "answers": [
-      {
-        "text": "Ive used https://expattaxcpas.com/israel/, but qiuld recommended speaking to a few",
-        "name": "Expat Tax CPAs",
-        "phone": null,
-        "count": 1,
-        "date": "2025-12-08"
       }
     ]
   },
@@ -3902,19 +3794,6 @@
     ]
   },
   {
-    "question": "Can anyone recommend a tailor in central Tel Aviv to shorten a dress quickly?",
-    "category": "Bureaucracy & Services",
-    "answers": [
-      {
-        "text": "חייט בר כוכבא (Bar Kochba Tailor), +972 50-293-9367",
-        "name": "חייט בר כוכבא (Bar Kochba Tailor)",
-        "phone": "+972 50-293-9367",
-        "count": 1,
-        "date": "2026-01-13"
-      }
-    ]
-  },
-  {
     "question": "Can anyone recommend a good tailor for madim (military uniforms)?",
     "category": "Bureaucracy & Services",
     "answers": [
@@ -3944,19 +3823,6 @@
         "phone": "+972 58-458-6655",
         "count": 1,
         "date": "2026-01-15"
-      }
-    ]
-  },
-  {
-    "question": "Does anyone recommend a personal injury attorney in Tel Aviv?",
-    "category": "Bureaucracy & Services",
-    "answers": [
-      {
-        "text": "[CONTACT: יוחנן לוין (Yohanan Levin), +972 54-831-7620] Highly recommend",
-        "name": "יוחנן לוין (Yohanan Levin)",
-        "phone": "+972 54-831-7620",
-        "count": 1,
-        "date": "2026-01-26"
       }
     ]
   },
@@ -4133,6 +3999,13 @@
         "phone": "+972 52-385-7254",
         "count": 1,
         "date": "2026-03-24"
+      },
+      {
+        "text": "Ive used https://expattaxcpas.com/israel/, but qiuld recommended speaking to a few",
+        "name": "Expat Tax CPAs",
+        "phone": null,
+        "count": 1,
+        "date": "2025-12-08"
       }
     ]
   },
@@ -4198,73 +4071,6 @@
         "phone": null,
         "count": 1,
         "date": "2026-04-28"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend an English-speaking accountant?",
-    "category": "Bureaucracy & Services",
-    "answers": [
-      {
-        "text": "Boruch Levenson (+972 52-790-3687)",
-        "name": "Boruch Levenson",
-        "phone": "+972 52-790-3687",
-        "count": 1,
-        "date": "2026-05-03"
-      },
-      {
-        "text": "Eran Accountant, +972 54-572-5444",
-        "name": "Eran Accountant",
-        "phone": "+972 54-572-5444",
-        "count": 1,
-        "date": "2026-08-10"
-      }
-    ]
-  },
-  {
-    "question": "Where is a good hair salon or hairdresser for a women's haircut with reasonable prices in Tel Aviv?",
-    "category": "Bureaucracy & Services",
-    "answers": [
-      {
-        "text": "Talbeauty on Allenby",
-        "name": "Talbeauty",
-        "phone": null,
-        "count": 1,
-        "date": "2026-05-04"
-      },
-      {
-        "text": "[CONTACT: Raquel Hairdresser, +972 53-865-8762]",
-        "name": "Raquel Hairdresser",
-        "phone": "+972 53-865-8762",
-        "count": 1,
-        "date": "2026-05-04"
-      },
-      {
-        "text": "Insta: @ahuva.bitan 🎀",
-        "name": "Ahuva Bitan",
-        "phone": null,
-        "count": 1,
-        "date": "2026-10-13"
-      },
-      {
-        "text": "100memet on Ben yehuda 100 shek for a cut",
-        "name": "100memet",
-        "phone": null,
-        "count": 1,
-        "date": "2026-10-13"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone suggest a tailor in North Tel Aviv?",
-    "category": "Bureaucracy & Services",
-    "answers": [
-      {
-        "text": "https://share.google/MXzxacLnC2h9A4zeP",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2026-05-28"
       }
     ]
   },
@@ -4390,6 +4196,13 @@
         "phone": "+972 54-262-7561",
         "count": 1,
         "date": "2026-07-12"
+      },
+      {
+        "text": "[CONTACT: יוחנן לוין (Yohanan Levin), +972 54-831-7620] Highly recommend",
+        "name": "יוחנן לוין (Yohanan Levin)",
+        "phone": "+972 54-831-7620",
+        "count": 1,
+        "date": "2026-01-26"
       }
     ]
   },
@@ -4462,26 +4275,13 @@
         "phone": null,
         "count": 1,
         "date": "2026-07-28"
-      }
-    ]
-  },
-  {
-    "question": "Does anyone know a good photographer in Tel Aviv or Herzliya for a special occasion?",
-    "category": "Bureaucracy & Services",
-    "answers": [
-      {
-        "text": "[CONTACT: Benny, +972 54-332-2638]",
-        "name": "Benny",
-        "phone": "+972 54-332-2638",
-        "count": 1,
-        "date": "2026-08-01"
       },
       {
-        "text": "[CONTACT: ישי, +972 53-333-4367]",
-        "name": "ישי (Yishai)",
-        "phone": "+972 53-333-4367",
+        "text": "Bracelet Fixer (+972 54-333-2481), located on Ben Yehuda/Mendeli.",
+        "name": "Bracelet Fixer",
+        "phone": "+972 54-333-2481",
         "count": 1,
-        "date": "2026-08-01"
+        "date": "2026-10-15"
       }
     ]
   },
@@ -4521,6 +4321,34 @@
         "phone": null,
         "count": 1,
         "date": "2026-08-14"
+      },
+      {
+        "text": "Talbeauty on Allenby",
+        "name": "Talbeauty",
+        "phone": null,
+        "count": 1,
+        "date": "2026-05-04"
+      },
+      {
+        "text": "[CONTACT: Raquel Hairdresser, +972 53-865-8762]",
+        "name": "Raquel Hairdresser",
+        "phone": "+972 53-865-8762",
+        "count": 1,
+        "date": "2026-05-04"
+      },
+      {
+        "text": "Insta: @ahuva.bitan 🎀",
+        "name": "Ahuva Bitan",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-13"
+      },
+      {
+        "text": "100memet on Ben yehuda 100 shek for a cut",
+        "name": "100memet",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-13"
       }
     ]
   },
@@ -4531,19 +4359,6 @@
       {
         "text": "Nefesh b nefesh was very helpful. You just sign up and they give you a contact person that guides you and you can ask questions",
         "name": "Nefesh B'Nefesh",
-        "phone": null,
-        "count": 1,
-        "date": "2026-08-30"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend a good dry cleaner who is skilled at removing stains?",
-    "category": "Bureaucracy & Services",
-    "answers": [
-      {
-        "text": "The cute couple  on bogroshov accross from bar kochva (don’t know what they are called)",
-        "name": null,
         "phone": null,
         "count": 1,
         "date": "2026-08-30"
@@ -4815,19 +4630,6 @@
     ]
   },
   {
-    "question": "What mehadrin (strictly kosher) restaurants are located in the Old North of Tel Aviv?",
-    "category": "Food & Restaurants",
-    "answers": [
-      {
-        "text": "La lasagna, I think craft is mehadtin, and then you have a bunch in the namal (port)",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2025-07-09"
-      }
-    ]
-  },
-  {
     "question": "Can anyone recommend a good and affordable butcher?",
     "category": "Food & Restaurants",
     "answers": [
@@ -5012,19 +4814,6 @@
     ]
   },
   {
-    "question": "Where can I order kosher chicken soup in Tel Aviv?",
-    "category": "Food & Restaurants",
-    "answers": [
-      {
-        "text": "Shmulik Cohen Restaurant https://wolt.com/he/isr/tel-aviv/restaurant/shmulik-cohen-restaurant",
-        "name": "Shmulik Cohen Restaurant",
-        "phone": null,
-        "count": 1,
-        "date": "2025-08-28"
-      }
-    ]
-  },
-  {
     "question": "Where can I find the best kosher fish and chips in Israel?",
     "category": "Food & Restaurants",
     "answers": [
@@ -5124,19 +4913,6 @@
     ]
   },
   {
-    "question": "Can anyone recommend a kosher meat restaurant that has a sukkah (temporary booth for Sukkot)?",
-    "category": "Food & Restaurants",
-    "answers": [
-      {
-        "text": "Meatos",
-        "name": "Meatos",
-        "phone": null,
-        "count": 1,
-        "date": "2025-10-09"
-      }
-    ]
-  },
-  {
     "question": "Where is a good spot for daytime Friday drinks in Tel Aviv for a relatively large group?",
     "category": "Food & Restaurants",
     "answers": [
@@ -5192,6 +4968,13 @@
         "phone": null,
         "count": 2,
         "date": "2025-10-28"
+      },
+      {
+        "text": "Shmulik Cohen Restaurant https://wolt.com/he/isr/tel-aviv/restaurant/shmulik-cohen-restaurant",
+        "name": "Shmulik Cohen Restaurant",
+        "phone": null,
+        "count": 1,
+        "date": "2025-08-28"
       }
     ]
   },
@@ -5225,6 +5008,34 @@
         "phone": null,
         "count": 1,
         "date": "2025-11-05"
+      },
+      {
+        "text": "קצביית בצלאל, טשרניחובסקי 8 (Bezalel Butchery, Tchernikhovski 8)",
+        "name": "קצביית בצלאל (Bezalel Butchery)",
+        "phone": null,
+        "count": 1,
+        "date": "2026-10-14"
+      },
+      {
+        "text": "Avi Nahum !",
+        "name": "Avi Nahum",
+        "phone": null,
+        "count": 1,
+        "date": "2026-02-04"
+      },
+      {
+        "text": "[CONTACT: Aharon Brothers Butcher, +972 50-522-2505]",
+        "name": "Aharon Brothers Butcher",
+        "phone": "+972 50-522-2505",
+        "count": 1,
+        "date": "2026-08-27"
+      },
+      {
+        "text": "La boucherie francaise on bograshov but they may not have much left",
+        "name": "La boucherie francaise",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-24"
       }
     ]
   },
@@ -5318,39 +5129,6 @@
         "phone": null,
         "count": 1,
         "date": "2025-11-13"
-      }
-    ]
-  },
-  {
-    "question": "What is the best kosher restaurant for dinner reservations in Tel Aviv?",
-    "category": "Food & Restaurants",
-    "answers": [
-      {
-        "text": "Dvora!!",
-        "name": "Dvora",
-        "phone": null,
-        "count": 1,
-        "date": "2025-11-16"
-      }
-    ]
-  },
-  {
-    "question": "Does anyone know of good kosher places for Friday brunch in Tel Aviv?",
-    "category": "Food & Restaurants",
-    "answers": [
-      {
-        "text": "Lorentz and mintz",
-        "name": "Lorentz and mintz",
-        "phone": null,
-        "count": 1,
-        "date": "2025-11-27"
-      },
-      {
-        "text": "Cafe 0/2 is new and great!",
-        "name": "Cafe 0/2",
-        "phone": null,
-        "count": 1,
-        "date": "2025-11-27"
       }
     ]
   },
@@ -5654,19 +5432,13 @@
         "phone": null,
         "count": 1,
         "date": "2026-02-03"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend a kosher butcher on Wolt in Tel Aviv?",
-    "category": "Food & Restaurants",
-    "answers": [
+      },
       {
-        "text": "Avi Nahum !",
-        "name": "Avi Nahum",
+        "text": "Dvora!!",
+        "name": "Dvora",
         "phone": null,
         "count": 1,
-        "date": "2026-02-04"
+        "date": "2025-11-16"
       }
     ]
   },
@@ -5796,7 +5568,7 @@
     ]
   },
   {
-    "question": "Where can I buy bagels in Tel Aviv, aside from Schmearz and Good Bagels?",
+    "question": "Where can I buy bagels in Tel Aviv?",
     "category": "Food & Restaurants",
     "answers": [
       {
@@ -5805,6 +5577,13 @@
         "phone": null,
         "count": 1,
         "date": "2026-03-19"
+      },
+      {
+        "text": "Tals bagels",
+        "name": "Tals bagels",
+        "phone": null,
+        "count": 1,
+        "date": "2026-08-05"
       }
     ]
   },
@@ -5894,7 +5673,7 @@
         "text": "Lorenz and mintz",
         "name": "Lorenz & Mintz",
         "phone": null,
-        "count": 1,
+        "count": 2,
         "date": "2026-04-12"
       },
       {
@@ -5903,6 +5682,13 @@
         "phone": null,
         "count": 1,
         "date": "2026-04-11"
+      },
+      {
+        "text": "Cafe 0/2 is new and great!",
+        "name": "Cafe 0/2",
+        "phone": null,
+        "count": 1,
+        "date": "2025-11-27"
       }
     ]
   },
@@ -6110,6 +5896,13 @@
         "phone": null,
         "count": 1,
         "date": "2026-05-13"
+      },
+      {
+        "text": "La lasagna, I think craft is mehadtin, and then you have a bunch in the namal (port)",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2025-07-09"
       }
     ]
   },
@@ -6268,19 +6061,13 @@
         "phone": null,
         "count": 1,
         "date": "2026-08-05"
-      }
-    ]
-  },
-  {
-    "question": "Where is the best place in Tel Aviv to buy a large quantity of plain whole bagels?",
-    "category": "Food & Restaurants",
-    "answers": [
+      },
       {
-        "text": "Tals bagels",
-        "name": "Tals bagels",
+        "text": "I loveee rashel if you like morrocan food and want a good vibe",
+        "name": "Rashel",
         "phone": null,
         "count": 1,
-        "date": "2026-08-05"
+        "date": "2026-09-23"
       }
     ]
   },
@@ -6391,19 +6178,6 @@
     ]
   },
   {
-    "question": "Does anyone know of a kosher butcher in Tel Aviv that delivers?",
-    "category": "Food & Restaurants",
-    "answers": [
-      {
-        "text": "[CONTACT: Aharon Brothers Butcher, +972 50-522-2505]",
-        "name": "Aharon Brothers Butcher",
-        "phone": "+972 50-522-2505",
-        "count": 1,
-        "date": "2026-08-27"
-      }
-    ]
-  },
-  {
     "question": "What is the best parve (non-dairy) ice cream brand besides Ben & Jerry's?",
     "category": "Food & Restaurants",
     "answers": [
@@ -6464,19 +6238,6 @@
     ]
   },
   {
-    "question": "Can anyone recommend a high-end kosher meat restaurant with a sukkah (temporary outdoor booth for Sukkot) and great atmosphere for a birthday celebration in Tel Aviv or Jerusalem?",
-    "category": "Food & Restaurants",
-    "answers": [
-      {
-        "text": "Slim pickings with a sukkah in Tel Aviv. Probably limited to hotel restaurants. Katzir at the Kempinski is probably your best bet. In Jerusalem Andalucia in Kikar Hamusika should have a cool vibe with live music. There definitely are other great restaurants in Jerusalem but don't know which ones have a good sukkah atmosphere",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2026-09-08"
-      }
-    ]
-  },
-  {
     "question": "Which restaurants in Tel Aviv have private rooms?",
     "category": "Food & Restaurants",
     "answers": [
@@ -6524,8 +6285,8 @@
         "text": "rent@noachcar.co.il The best",
         "name": "Noach Car",
         "phone": null,
-        "count": 2,
-        "date": "2025-11-10"
+        "count": 3,
+        "date": "2026-01-11"
       }
     ]
   },
@@ -6622,33 +6383,6 @@
     ]
   },
   {
-    "question": "Can anyone recommend a good driving instructor in Tel Aviv?",
-    "category": "Transport",
-    "answers": [
-      {
-        "text": "Daniel Driving Teacher, +972 51-545-0430",
-        "name": "Daniel Driving Teacher",
-        "phone": "+972 51-545-0430",
-        "count": 3,
-        "date": "2026-08-09"
-      },
-      {
-        "text": "[CONTACT: Amit Ratzon, +972 53-787-8376]",
-        "name": "Amit Ratzon",
-        "phone": "+972 53-787-8376",
-        "count": 2,
-        "date": "2025-11-02"
-      },
-      {
-        "text": "Shiri Driving Instructor, +972 53-757-7041",
-        "name": "Shiri Driving Instructor",
-        "phone": "+972 53-757-7041",
-        "count": 1,
-        "date": "2026-08-09"
-      }
-    ]
-  },
-  {
     "question": "Can anyone recommend a driver in Sri Lanka?",
     "category": "Transport",
     "answers": [
@@ -6716,22 +6450,22 @@
         "text": "[CONTACT: Daniel Driving Teacher, +972 51-545-0430]",
         "name": "Daniel Driving Teacher",
         "phone": "+972 51-545-0430",
-        "count": 3,
-        "date": "2026-05-31"
+        "count": 6,
+        "date": "2026-08-09"
       },
       {
         "text": "[CONTACT: Amit Ratzon, +972 53-787-8376]",
         "name": "Amit Ratzon",
         "phone": "+972 53-787-8376",
-        "count": 1,
+        "count": 3,
         "date": "2026-03-15"
       },
       {
         "text": "[CONTACT: Shiri Driving Instructor, +972 53-757-7041]",
         "name": "Shiri Driving Instructor",
         "phone": "+972 53-757-7041",
-        "count": 1,
-        "date": "2025-09-17"
+        "count": 2,
+        "date": "2026-08-09"
       }
     ]
   },
@@ -6808,19 +6542,6 @@
     ]
   },
   {
-    "question": "Does anyone know of cheap hourly car rentals other than Car2go?",
-    "category": "Transport",
-    "answers": [
-      {
-        "text": "Noach car rentals",
-        "name": "Noach car rentals",
-        "phone": null,
-        "count": 1,
-        "date": "2026-01-11"
-      }
-    ]
-  },
-  {
     "question": "Where can I rent a bicycle for an hour?",
     "category": "Transport",
     "answers": [
@@ -6867,20 +6588,7 @@
     ]
   },
   {
-    "question": "Can anyone recommend a bike shop in Tel Aviv, especially for second-hand bikes or bike rentals?",
-    "category": "Transport",
-    "answers": [
-      {
-        "text": "[CONTACT: Alex - Yalla Bikes, +1 (786) 325-7479]",
-        "name": "Alex - Yalla Bikes",
-        "phone": "+1 (786) 325-7479",
-        "count": 1,
-        "date": "2026-05-13"
-      }
-    ]
-  },
-  {
-    "question": "What are the best bicycle repair shops in Tel Aviv?",
+    "question": "Can anyone recommend a bike shop in Tel Aviv for repairs, second-hand bikes or rentals?",
     "category": "Transport",
     "answers": [
       {
@@ -6903,6 +6611,13 @@
         "phone": null,
         "count": 1,
         "date": "2026-05-17"
+      },
+      {
+        "text": "[CONTACT: Alex - Yalla Bikes, +1 (786) 325-7479]",
+        "name": "Alex - Yalla Bikes",
+        "phone": "+1 (786) 325-7479",
+        "count": 1,
+        "date": "2026-05-13"
       }
     ]
   },
@@ -6972,26 +6687,6 @@
     ]
   },
   {
-    "question": "Can anyone recommend a reliable taxi driver for a late-night ride to the airport?",
-    "category": "Transport",
-    "answers": [
-      {
-        "text": "[CONTACT: Eli Taxi, +972 52-256-2211] A little expensive but he’s the best!",
-        "name": "Eli Taxi",
-        "phone": "+972 52-256-2211",
-        "count": 1,
-        "date": "2026-08-02"
-      },
-      {
-        "text": "[CONTACT: Taxi, +972 2-313-0831]",
-        "name": "Taxi",
-        "phone": "+972 2-313-0831",
-        "count": 1,
-        "date": "2026-08-02"
-      }
-    ]
-  },
-  {
     "question": "Can anyone recommend a hasaot (shuttle / transportation) driver?",
     "category": "Transport",
     "answers": [
@@ -7014,6 +6709,20 @@
         "phone": "+972 58-580-1616",
         "count": 1,
         "date": "2026-08-11"
+      },
+      {
+        "text": "[CONTACT: Eli Taxi, +972 52-256-2211] A little expensive but he’s the best!",
+        "name": "Eli Taxi",
+        "phone": "+972 52-256-2211",
+        "count": 1,
+        "date": "2026-08-02"
+      },
+      {
+        "text": "[CONTACT: Taxi, +972 2-313-0831]",
+        "name": "Taxi",
+        "phone": "+972 2-313-0831",
+        "count": 1,
+        "date": "2026-08-02"
       }
     ]
   },
@@ -7078,15 +6787,15 @@
         "text": "Wizo center! On king George",
         "name": "WIZO",
         "phone": null,
-        "count": 4,
+        "count": 6,
         "date": "2026-09-27"
       },
       {
         "text": "https://maps.app.goo.gl/jyWU7pQDCdNaatTL7?g_st=iw",
         "name": null,
         "phone": null,
-        "count": 1,
-        "date": "2026-04-07"
+        "count": 2,
+        "date": "2026-06-08"
       },
       {
         "text": "There are boxes around the city for recycle and donation. One on north east corner of jabatinsky and ibn gvirol, theres another on jabtinsky/ sokolov",
@@ -7108,6 +6817,41 @@
         "phone": null,
         "count": 1,
         "date": "2026-09-27"
+      },
+      {
+        "text": "גינת דבורה (Ginat Dvora)",
+        "name": "גינת דבורה (Ginat Dvora)",
+        "phone": null,
+        "count": 1,
+        "date": "2026-06-08"
+      },
+      {
+        "text": "Aron Devorah (ארון דבורה - Deborah's closet): https://maps.app.goo.gl/jyWU7pQDCdNaatTL7?g_st=iw - It’s a community closet that you can donate clothes and other items for anyone in need",
+        "name": "Aron Devorah",
+        "phone": null,
+        "count": 1,
+        "date": "2026-04-25"
+      },
+      {
+        "text": "There’s a bin on the corner of Basel and sokolov",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2025-09-30"
+      },
+      {
+        "text": "חיי שרה תרומות (Chayei Sarah Donations): +972 53-311-0073",
+        "name": "חיי שרה תרומות (Chayei Sarah Donations)",
+        "phone": "+972 53-311-0073",
+        "count": 1,
+        "date": "2025-07-28"
+      },
+      {
+        "text": "There is a donation bin next to the dov hoz community center, on dov hoz near the parked bikes",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-07-19"
       }
     ]
   },
@@ -7184,26 +6928,6 @@
     ]
   },
   {
-    "question": "Where can I donate women's clothing in Tel Aviv?",
-    "category": "Other",
-    "answers": [
-      {
-        "text": "Wizo on king george",
-        "name": "Wizo",
-        "phone": null,
-        "count": 1,
-        "date": "2026-05-18"
-      },
-      {
-        "text": "חיי שרה תרומות (Chayei Sarah Donations): +972 53-311-0073",
-        "name": "חיי שרה תרומות (Chayei Sarah Donations)",
-        "phone": "+972 53-311-0073",
-        "count": 1,
-        "date": "2025-07-28"
-      }
-    ]
-  },
-  {
     "question": "Does anyone know a rabbi who is bilingual in French and English?",
     "category": "Other",
     "answers": [
@@ -7260,6 +6984,13 @@
         "phone": "+972 54-640-0189",
         "count": 1,
         "date": "2025-08-20"
+      },
+      {
+        "text": "[CONTACT: Puppyon Groomer, +972 52-434-1041]",
+        "name": "Puppyon Groomer",
+        "phone": "+972 52-434-1041",
+        "count": 1,
+        "date": "2025-12-01"
       }
     ]
   },
@@ -7273,26 +7004,6 @@
         "phone": null,
         "count": 1,
         "date": "2025-09-21"
-      }
-    ]
-  },
-  {
-    "question": "Where can I donate clothes in the Old North of Tel Aviv?",
-    "category": "Other",
-    "answers": [
-      {
-        "text": "Aron Devorah (ארון דבורה - Deborah's closet): https://maps.app.goo.gl/jyWU7pQDCdNaatTL7?g_st=iw - It’s a community closet that you can donate clothes and other items for anyone in need",
-        "name": "Aron Devorah",
-        "phone": null,
-        "count": 1,
-        "date": "2026-04-25"
-      },
-      {
-        "text": "There’s a bin on the corner of Basel and sokolov",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2025-09-30"
       }
     ]
   },
@@ -7339,19 +7050,6 @@
         "phone": null,
         "count": 1,
         "date": "2025-11-26"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend dog groomers in North Tel Aviv?",
-    "category": "Other",
-    "answers": [
-      {
-        "text": "[CONTACT: Puppyon Groomer, +972 52-434-1041]",
-        "name": "Puppyon Groomer",
-        "phone": "+972 52-434-1041",
-        "count": 1,
-        "date": "2025-12-01"
       }
     ]
   },
@@ -7576,33 +7274,6 @@
     ]
   },
   {
-    "question": "Is there somewhere in the Old North or central Tel Aviv to donate clothing and shoes?",
-    "category": "Other",
-    "answers": [
-      {
-        "text": "גינת דבורה (Ginat Dvora)",
-        "name": "גינת דבורה (Ginat Dvora)",
-        "phone": null,
-        "count": 1,
-        "date": "2026-06-08"
-      },
-      {
-        "text": "ויצו (WIZO) on king george by gan meir",
-        "name": "ויצו (WIZO)",
-        "phone": null,
-        "count": 1,
-        "date": "2026-06-08"
-      },
-      {
-        "text": "https://maps.app.goo.gl/jyWU7pQDCdNaatTL7?g_st=iw",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2026-06-08"
-      }
-    ]
-  },
-  {
     "question": "Are there any good surfboard repair places in Tel Aviv?",
     "category": "Other",
     "answers": [
@@ -7665,19 +7336,6 @@
         "phone": null,
         "count": 1,
         "date": "2026-07-13"
-      }
-    ]
-  },
-  {
-    "question": "Where can I donate clothes near Dizengoff and Gordon in Tel Aviv?",
-    "category": "Other",
-    "answers": [
-      {
-        "text": "There is a donation bin next to the dov hoz community center, on dov hoz near the parked bikes",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2026-07-19"
       }
     ]
   },
@@ -7919,15 +7577,15 @@
     ]
   },
   {
-    "question": "Can anyone recommend a good dentist in Tel Aviv, preferably through Maccabi or private?",
+    "question": "Can anyone recommend a good dentist in Tel Aviv, private or through Maccabi?",
     "category": "Health",
     "answers": [
       {
         "text": "agreed and if you go private Kaplan dental is great",
-        "name": "Kaplan dental",
+        "name": "Dr. Kaplan Dentist Tlv",
         "phone": null,
-        "count": 1,
-        "date": "2025-06-05"
+        "count": 3,
+        "date": "2026-04-15"
       },
       {
         "text": "i go to carmel shreber in the new maccabi dent on weizman, she speaks english and i had only the best experience w her",
@@ -7935,6 +7593,27 @@
         "phone": null,
         "count": 1,
         "date": "2025-06-05"
+      },
+      {
+        "text": "[CONTACT: Dentist Tlv, +972 58-602-2922]",
+        "name": "Dentist Tlv",
+        "phone": "+972 58-602-2922",
+        "count": 1,
+        "date": "2026-04-15"
+      },
+      {
+        "text": "Dr. Michael Meyer https://share.google/Oktxbi29KzbvjA6O8",
+        "name": "Dr. Michael Meyer",
+        "phone": null,
+        "count": 1,
+        "date": "2025-07-28"
+      },
+      {
+        "text": "https://maps.app.goo.gl/pwSyzqw9ucB9ZT5S6",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-03-09"
       }
     ]
   },
@@ -7975,19 +7654,6 @@
         "phone": null,
         "count": 1,
         "date": "2025-06-15"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend a dentist in Tel Aviv who takes walk-ins?",
-    "category": "Health",
-    "answers": [
-      {
-        "text": "[CONTACT: Dr. Kaplan Dentist Tlv, +972 3-696-0650]",
-        "name": "Dr. Kaplan Dentist Tlv",
-        "phone": "+972 3-696-0650",
-        "count": 1,
-        "date": "2025-06-18"
       }
     ]
   },
@@ -8112,32 +7778,19 @@
     ]
   },
   {
-    "question": "Can anyone recommend a private dentist in Tel Aviv?",
-    "category": "Health",
-    "answers": [
-      {
-        "text": "Dr. Michael Meyer https://share.google/Oktxbi29KzbvjA6O8",
-        "name": "Dr. Michael Meyer",
-        "phone": null,
-        "count": 1,
-        "date": "2025-07-28"
-      },
-      {
-        "text": "https://maps.app.goo.gl/pwSyzqw9ucB9ZT5S6",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2026-03-09"
-      }
-    ]
-  },
-  {
     "question": "Can anyone recommend an English-speaking Maccabi family doctor?",
     "category": "Health",
     "answers": [
       {
         "text": "Dr James Watson",
         "name": "Dr James Watson",
+        "phone": null,
+        "count": 2,
+        "date": "2026-10-08"
+      },
+      {
+        "text": "Dr. Gabriella Sampson",
+        "name": "Dr. Gabriella Sampson",
         "phone": null,
         "count": 2,
         "date": "2026-10-08"
@@ -8152,13 +7805,6 @@
       {
         "text": "Also Dr. Gavriel Blum!",
         "name": "Dr. Gavriel Blum",
-        "phone": null,
-        "count": 1,
-        "date": "2026-10-08"
-      },
-      {
-        "text": "Dr. Gabriella Sampson",
-        "name": "Dr. Gabriella Sampson",
         "phone": null,
         "count": 1,
         "date": "2026-10-08"
@@ -8188,19 +7834,13 @@
         "phone": null,
         "count": 1,
         "date": "2025-08-26"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend a good English-speaking Maccabi doctor in Tel Aviv?",
-    "category": "Health",
-    "answers": [
+      },
       {
-        "text": "Dr Gabriella Samson",
-        "name": "Dr Gabriella Samson",
+        "text": "Best dermatologist in TLV and JLM and he takes Maccabi! (He’s new in Israel so was easy to get an appointment) https://www.instagram.com/idcsi.derm?igsh=NDlzOXdmeGhlZjhq",
+        "name": "idcsi.derm",
         "phone": null,
         "count": 1,
-        "date": "2025-09-03"
+        "date": "2026-05-10"
       }
     ]
   },
@@ -8227,26 +7867,6 @@
         "phone": null,
         "count": 2,
         "date": "2025-09-11"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend a massage therapist for injury recovery and leg pain?",
-    "category": "Health",
-    "answers": [
-      {
-        "text": "Im A massage therapist! Instagram.com/miriam_klein1 I have availability tomorrow as well",
-        "name": "Miriam Klein",
-        "phone": null,
-        "count": 1,
-        "date": "2025-10-16"
-      },
-      {
-        "text": "[CONTACT: Eden K Mapu 2, +972 52-623-3128]",
-        "name": "Eden K Mapu 2",
-        "phone": "+972 52-623-3128",
-        "count": 1,
-        "date": "2025-10-16"
       }
     ]
   },
@@ -8365,6 +7985,13 @@
         "phone": null,
         "count": 1,
         "date": "2025-12-11"
+      },
+      {
+        "text": "Profit on ibn gvirol מגדל המאה (Migdal HaMe'ah / Century Tower)",
+        "name": "Profit",
+        "phone": null,
+        "count": 1,
+        "date": "2026-08-29"
       }
     ]
   },
@@ -8462,7 +8089,7 @@
         "text": "[CONTACT: Miriam Klein | Massage Therapist, +972 54-814-5650]",
         "name": "Miriam Klein | Massage Therapist",
         "phone": "+972 54-814-5650",
-        "count": 1,
+        "count": 2,
         "date": "2026-01-25"
       },
       {
@@ -8471,6 +8098,13 @@
         "phone": "+972 53-963-5223",
         "count": 1,
         "date": "2026-08-29"
+      },
+      {
+        "text": "[CONTACT: Eden K Mapu 2, +972 52-623-3128]",
+        "name": "Eden K Mapu 2",
+        "phone": "+972 52-623-3128",
+        "count": 1,
+        "date": "2025-10-16"
       }
     ]
   },
@@ -8582,52 +8216,6 @@
     ]
   },
   {
-    "question": "Can anyone recommend a good private dentist for teeth cleaning or a dentist through Maccabi?",
-    "category": "Health",
-    "answers": [
-      {
-        "text": "[CONTACT: Dentist Tlv, +972 58-602-2922]",
-        "name": "Dentist Tlv",
-        "phone": "+972 58-602-2922",
-        "count": 1,
-        "date": "2026-04-15"
-      },
-      {
-        "text": "[CONTACT: Dr. Kaplan Dentist Tlv, +972 3-696-0650]",
-        "name": "Dr. Kaplan Dentist Tlv",
-        "phone": "+972 3-696-0650",
-        "count": 1,
-        "date": "2026-04-15"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend a good private dentist for teeth cleaning?",
-    "category": "Health",
-    "answers": [
-      {
-        "text": "Dr. Eklove at Pearl Dental in Ranaana",
-        "name": "Dr. Eklove at Pearl Dental",
-        "phone": null,
-        "count": 1,
-        "date": "2026-05-10"
-      }
-    ]
-  },
-  {
-    "question": "Does anyone have a recommendation for a dermatologist who accepts Maccabi healthcare?",
-    "category": "Health",
-    "answers": [
-      {
-        "text": "Best dermatologist in TLV and JLM and he takes Maccabi! (He’s new in Israel so was easy to get an appointment) https://www.instagram.com/idcsi.derm?igsh=NDlzOXdmeGhlZjhq",
-        "name": "idcsi.derm",
-        "phone": null,
-        "count": 1,
-        "date": "2026-05-10"
-      }
-    ]
-  },
-  {
     "question": "What are the best Thai massage places in Tel Aviv?",
     "category": "Health",
     "answers": [
@@ -8687,19 +8275,6 @@
     ]
   },
   {
-    "question": "Can anyone recommend a good dentist?",
-    "category": "Health",
-    "answers": [
-      {
-        "text": "Dr Eklove from Pearl Dental in Ranaana is the best! https://www.pearldental.co.il/",
-        "name": "Dr Eklove - Pearl Dental",
-        "phone": null,
-        "count": 1,
-        "date": "2026-07-03"
-      }
-    ]
-  },
-  {
     "question": "Where is the cheapest and easiest place to get a vision test scheduled in Tel Aviv?",
     "category": "Health",
     "answers": [
@@ -8752,28 +8327,15 @@
     ]
   },
   {
-    "question": "Can anyone recommend a good dentist, either private or through Maccabi?",
+    "question": "Can anyone recommend a good private dentist?",
     "category": "Health",
     "answers": [
       {
         "text": "Dr Eklove from Pearl Dental in Ranaana is the best! https://www.pearldental.co.il/",
         "name": "Dr Eklove - Pearl Dental",
         "phone": null,
-        "count": 1,
+        "count": 3,
         "date": "2026-08-25"
-      }
-    ]
-  },
-  {
-    "question": "Can anyone recommend a good gym in Tel Aviv other than Icon?",
-    "category": "Health",
-    "answers": [
-      {
-        "text": "Profit on ibn gvirol מגדל המאה (Migdal HaMe'ah / Century Tower)",
-        "name": "Profit",
-        "phone": null,
-        "count": 1,
-        "date": "2026-08-29"
       }
     ]
   },
@@ -8811,33 +8373,7 @@
     ]
   },
   {
-    "question": "Can anyone recommend a great kosher meat restaurant for a special occasion in Tel Aviv?",
-    "category": "Food & Restaurants",
-    "answers": [
-      {
-        "text": "I loveee rashel if you like morrocan food and want a good vibe",
-        "name": "Rashel",
-        "phone": null,
-        "count": 1,
-        "date": "2026-09-23"
-      }
-    ]
-  },
-  {
-    "question": "Is there a kosher butcher open in Tel Aviv right now?",
-    "category": "Food & Restaurants",
-    "answers": [
-      {
-        "text": "La boucherie francaise on bograshov but they may not have much left",
-        "name": "La boucherie francaise",
-        "phone": null,
-        "count": 1,
-        "date": "2026-09-24"
-      }
-    ]
-  },
-  {
-    "question": "Which kosher restaurants in Tel Aviv have a sukkah (temporary outdoor hut for dining during Sukkot)?",
+    "question": "Which kosher restaurants have a sukkah (temporary outdoor hut for Sukkot)?",
     "category": "Food & Restaurants",
     "answers": [
       {
@@ -8846,6 +8382,48 @@
         "phone": null,
         "count": 1,
         "date": "2026-09-27"
+      },
+      {
+        "text": "Simo does",
+        "name": "Simo",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-29"
+      },
+      {
+        "text": "Hoshen 196",
+        "name": "Hoshen 196",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-29"
+      },
+      {
+        "text": "Dvora I believe!",
+        "name": "Dvora",
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-29"
+      },
+      {
+        "text": "Meatos",
+        "name": "Meatos",
+        "phone": null,
+        "count": 1,
+        "date": "2025-10-09"
+      },
+      {
+        "text": "Slim pickings with a sukkah in Tel Aviv. Probably limited to hotel restaurants. Katzir at the Kempinski is probably your best bet. In Jerusalem Andalucia in Kikar Hamusika should have a cool vibe with live music. There definitely are other great restaurants in Jerusalem but don't know which ones have a good sukkah atmosphere",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-08"
+      },
+      {
+        "text": "Pankina , la lasagna , Zota pizza",
+        "name": null,
+        "phone": null,
+        "count": 1,
+        "date": "2026-09-29"
       }
     ]
   },
@@ -9004,46 +8582,6 @@
     ]
   },
   {
-    "question": "Which kosher dairy restaurants in Tel Aviv have a sukkah (temporary outdoor hut for Sukkot)?",
-    "category": "Food & Restaurants",
-    "answers": [
-      {
-        "text": "Pankina , la lasagna , Zota pizza",
-        "name": null,
-        "phone": null,
-        "count": 1,
-        "date": "2026-09-29"
-      }
-    ]
-  },
-  {
-    "question": "Which kosher meat restaurants in Tel Aviv have a sukkah (temporary outdoor hut for Sukkot)?",
-    "category": "Food & Restaurants",
-    "answers": [
-      {
-        "text": "Simo does",
-        "name": "Simo",
-        "phone": null,
-        "count": 1,
-        "date": "2026-09-29"
-      },
-      {
-        "text": "Hoshen 196",
-        "name": "Hoshen 196",
-        "phone": null,
-        "count": 1,
-        "date": "2026-09-29"
-      },
-      {
-        "text": "Dvora I believe!",
-        "name": "Dvora",
-        "phone": null,
-        "count": 1,
-        "date": "2026-09-29"
-      }
-    ]
-  },
-  {
     "question": "Can anyone recommend nice kosher brunch spots near Florentin?",
     "category": "Food & Restaurants",
     "answers": [
@@ -9183,19 +8721,6 @@
     ]
   },
   {
-    "question": "Does anyone know a jeweler who can fix broken gold necklaces?",
-    "category": "Bureaucracy & Services",
-    "answers": [
-      {
-        "text": "Bracelet Fixer (+972 54-333-2481), located on Ben Yehuda/Mendeli.",
-        "name": "Bracelet Fixer",
-        "phone": "+972 54-333-2481",
-        "count": 1,
-        "date": "2026-10-15"
-      }
-    ]
-  },
-  {
     "question": "Does anyone have a contact for someone who repairs washing machines in Tel Aviv?",
     "category": "Home & Repairs",
     "answers": [
@@ -9232,39 +8757,6 @@
         "phone": null,
         "count": 1,
         "date": "2026-10-06"
-      }
-    ]
-  },
-  {
-    "question": "Where can I buy mezuzahs in Tel Aviv that is open on a Friday?",
-    "category": "Shopping",
-    "answers": [
-      {
-        "text": "Nahalat binyamin art fair",
-        "name": "Nahalat Binyamin Art Fair",
-        "phone": null,
-        "count": 1,
-        "date": "2026-10-09"
-      },
-      {
-        "text": "מזוזה סנטר (Mezuza Center)",
-        "name": "מזוזה סנטר (Mezuza Center)",
-        "phone": null,
-        "count": 1,
-        "date": "2026-10-09"
-      }
-    ]
-  },
-  {
-    "question": "Where can I buy inexpensive basic kitchenware, such as glass containers, in Tel Aviv?",
-    "category": "Shopping",
-    "answers": [
-      {
-        "text": "Max stock",
-        "name": "Max stock",
-        "phone": null,
-        "count": 1,
-        "date": "2026-10-12"
       }
     ]
   },
@@ -9317,19 +8809,6 @@
         "phone": null,
         "count": 1,
         "date": "2026-10-12"
-      }
-    ]
-  },
-  {
-    "question": "Does anyone know a good butcher in Tel Aviv?",
-    "category": "Food & Restaurants",
-    "answers": [
-      {
-        "text": "קצביית בצלאל, טשרניחובסקי 8 (Bezalel Butchery, Tchernikhovski 8)",
-        "name": "קצביית בצלאל (Bezalel Butchery)",
-        "phone": null,
-        "count": 1,
-        "date": "2026-10-14"
       }
     ]
   },

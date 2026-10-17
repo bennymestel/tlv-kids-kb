@@ -8,13 +8,11 @@
       "Can anyone recommend a technician to install an air conditioner?",
       "Can anyone recommend an AC technician for an urgent repair?",
       "Can anyone recommend a good handyman in Tel Aviv?",
-      "Can anyone recommend an English-speaking plumber in Tel Aviv?",
+      "Can anyone recommend a reliable plumber in Tel Aviv?",
       "Can anyone recommend a technician who can fix a leaking air conditioner?",
       "Can anyone recommend an oven repair technician?",
-      "Can anyone recommend a reliable plumber in Tel Aviv?",
       "Can anyone recommend a good and trustworthy electrician?",
       "Can anyone recommend an exterminator in Tel Aviv?",
-      "Can anyone recommend someone who can repair an air conditioner tonight?",
       "Can anyone recommend someone to clean air conditioning units?",
       "Can anyone recommend a washing machine repair technician?",
       "Does anyone have a contact for someone who can clean and fix an air conditioner?"
@@ -29,13 +27,11 @@
       "Can anyone recommend a technician to install an air conditioner?",
       "Can anyone recommend an AC technician for an urgent repair?",
       "Can anyone recommend a good handyman in Tel Aviv?",
-      "Can anyone recommend an English-speaking plumber in Tel Aviv?",
+      "Can anyone recommend a reliable plumber in Tel Aviv?",
       "Can anyone recommend a technician who can fix a leaking air conditioner?",
       "Can anyone recommend an oven repair technician?",
-      "Can anyone recommend a reliable plumber in Tel Aviv?",
       "Can anyone recommend a good and trustworthy electrician?",
       "Can anyone recommend an exterminator in Tel Aviv?",
-      "Can anyone recommend someone who can repair an air conditioner tonight?",
       "Can anyone recommend someone to clean air conditioning units?",
       "Can anyone recommend a washing machine repair technician?",
       "Does anyone have a contact for someone who can clean and fix an air conditioner?"
@@ -115,7 +111,6 @@
     "category": null,
     "expected": [
       "Can anyone recommend an English-speaking driving instructor in the Tel Aviv area?",
-      "Can anyone recommend a good driving instructor in Tel Aviv?",
       "Can anyone recommend a driving school or instructor in Tel Aviv to do a mivchan hamara (license conversion driving test)?"
     ]
   },
@@ -201,13 +196,11 @@
       "Can anyone recommend a technician to install an air conditioner?",
       "Can anyone recommend an AC technician for an urgent repair?",
       "Can anyone recommend a good handyman in Tel Aviv?",
-      "Can anyone recommend an English-speaking plumber in Tel Aviv?",
+      "Can anyone recommend a reliable plumber in Tel Aviv?",
       "Can anyone recommend a technician who can fix a leaking air conditioner?",
       "Can anyone recommend an oven repair technician?",
-      "Can anyone recommend a reliable plumber in Tel Aviv?",
       "Can anyone recommend a good and trustworthy electrician?",
       "Can anyone recommend an exterminator in Tel Aviv?",
-      "Can anyone recommend someone who can repair an air conditioner tonight?",
       "Can anyone recommend someone to clean air conditioning units?",
       "Can anyone recommend a washing machine repair technician?",
       "Does anyone have a contact for someone who can clean and fix an air conditioner?"
@@ -219,11 +212,9 @@
     "category": null,
     "expected": [
       "Can anyone recommend an exterminator in Tel Aviv?",
-      "Can anyone recommend a good exterminator to seal an apartment against cockroaches?",
+      "Can anyone recommend a good pest control exterminator, specifically for cockroaches?",
       "Can anyone recommend a good exterminator to deal with a fruit fly issue in an apartment?",
       "Can anyone recommend a good handyman in Tel Aviv?",
-      "Can anyone recommend an exterminator to spray an apartment for cockroaches (g'ukim) before moving in?",
-      "Can anyone recommend a good pest control exterminator, specifically for cockroaches?",
       "Does anyone have a contact for an exterminator who can get rid of maggots?",
       "Can anyone recommend a reliable plumber in Tel Aviv?"
     ]
@@ -234,7 +225,6 @@
     "category": null,
     "expected": [
       "Can anyone recommend a reliable plumber in Tel Aviv?",
-      "Can anyone recommend an English-speaking plumber in Tel Aviv?",
       "Can anyone recommend a good handyman in Tel Aviv?",
       "Can anyone recommend an exterminator in Tel Aviv?",
       "Can anyone recommend a good and trustworthy electrician?"
@@ -272,8 +262,6 @@
     "category": null,
     "expected": [
       "Where can I donate clothing in Tel Aviv?",
-      "Where can I donate clothes in the Old North of Tel Aviv?",
-      "Where can I donate women's clothing in Tel Aviv?",
       "Where close to Ben Gurion Boulevard in Tel Aviv can I donate sheets and clothing?"
     ]
   },
@@ -286,7 +274,6 @@
       "Can anyone recommend a good men's barbershop in or near the Old North that is reasonably priced?",
       "What is the best place to get a haircut in Tel Aviv?",
       "Can anyone recommend a good barber in Tel Aviv?",
-      "Can anyone recommend a good barber in Tel Aviv who gives non-Israeli style haircuts?",
       "Does anyone know a good haircut place for a man with curly or wavy hair?"
     ]
   },
@@ -296,8 +283,6 @@
     "category": "Bureaucracy & Services",
     "expected": [
       "Can anyone recommend a good tailor in Tel Aviv?",
-      "Can anyone recommend a tailor in the Old North of Tel Aviv?",
-      "Can anyone recommend a tailor in central Tel Aviv to shorten a dress quickly?",
       "Does anyone have a recommendation for a tailor trusted with delicate dresses?",
       "Can anyone recommend a tailor to take suit measurements?"
     ]
@@ -307,7 +292,6 @@
     "group": "category",
     "category": "Transport",
     "expected": [
-      "Can anyone recommend a good driving instructor in Tel Aviv?",
       "Can anyone recommend an English-speaking driving instructor in the Tel Aviv area?",
       "Can anyone recommend a driving school or instructor in Tel Aviv to do a mivchan hamara (license conversion driving test)?"
     ]
@@ -320,7 +304,6 @@
       "Can anyone recommend a reliable moving company in Tel Aviv?",
       "Can anyone recommend a reliable last-minute mover in Tel Aviv?",
       "Can anyone recommend an affordable and reliable mover for furniture in Tel Aviv?",
-      "Can anyone recommend a mover to move a couch in Tel Aviv?",
       "Can anyone recommend a mover to transport a tall cabinet across Tel Aviv?",
       "Does anyone know a mover with a van or small truck who can transport items from Ra'anana to Tel Aviv?",
       "Can anyone recommend a reasonably priced moving company to move a refrigerator?"
@@ -354,7 +337,6 @@
     "category": null,
     "expected": [
       "Can anyone recommend a good tailor in Tel Aviv?",
-      "Can anyone recommend a tailor in the Old North of Tel Aviv?",
       "Does anyone have a recommendation for a tailor trusted with delicate dresses?"
     ]
   },
@@ -389,7 +371,6 @@
     "category": null,
     "expected": [
       "Can anyone recommend a reliable plumber in Tel Aviv?",
-      "Can anyone recommend an English-speaking plumber in Tel Aviv?",
       "Can anyone recommend a good handyman in Tel Aviv?",
       "Can anyone recommend an exterminator in Tel Aviv?",
       "Can anyone recommend a good and trustworthy electrician?"
@@ -404,13 +385,11 @@
       "Can anyone recommend a technician to install an air conditioner?",
       "Can anyone recommend an AC technician for an urgent repair?",
       "Can anyone recommend a good handyman in Tel Aviv?",
-      "Can anyone recommend an English-speaking plumber in Tel Aviv?",
+      "Can anyone recommend a reliable plumber in Tel Aviv?",
       "Can anyone recommend a technician who can fix a leaking air conditioner?",
       "Can anyone recommend an oven repair technician?",
-      "Can anyone recommend a reliable plumber in Tel Aviv?",
       "Can anyone recommend a good and trustworthy electrician?",
       "Can anyone recommend an exterminator in Tel Aviv?",
-      "Can anyone recommend someone who can repair an air conditioner tonight?",
       "Can anyone recommend someone to clean air conditioning units?",
       "Can anyone recommend a washing machine repair technician?",
       "Does anyone have a contact for someone who can clean and fix an air conditioner?"
@@ -421,7 +400,6 @@
     "group": "shorthand",
     "category": null,
     "expected": [
-      "Can anyone recommend a good English-speaking Maccabi doctor in Tel Aviv?",
       "Can anyone recommend an English-speaking Maccabi family doctor?",
       "Can anyone recommend an English-speaking female doctor in Tel Aviv through Maccabi?",
       "Can anyone recommend a good English-speaking family doctor in Tel Aviv?"
@@ -449,7 +427,6 @@
     "group": "shorthand",
     "category": null,
     "expected": [
-      "Does anyone have a recommendation for a dermatologist who accepts Maccabi healthcare?",
       "Can anyone recommend a good dermatologist in Tel Aviv?"
     ]
   },
@@ -492,7 +469,7 @@
       "Can anyone recommend an oven repair technician?",
       "Can anyone recommend a good and trustworthy electrician?",
       "Can anyone recommend a fridge repair person?",
-      "Can anyone recommend someone who can repair an air conditioner tonight?",
+      "Can anyone recommend a technician who can fix a leaking air conditioner?",
       "Can anyone recommend a good handyman in Tel Aviv?"
     ]
   },
@@ -580,7 +557,6 @@
     "category": null,
     "expected": [
       "Can anyone recommend a good tailor in Tel Aviv?",
-      "Can anyone recommend a tailor in the Old North of Tel Aviv?",
       "Does anyone have a recommendation for a tailor trusted with delicate dresses?"
     ]
   },
